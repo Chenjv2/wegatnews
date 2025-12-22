@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --ff: "Inter", sans-serif;
+    --color1: white;
+    --color2: black;
+    --coloraccent: rgba(0, 128, 128, 1);
+    --coloraccent-hover: rgb(9, 96, 96);
+    --h1: bold clamp(24px, 5vw, 40px)/clamp(16px, 12vw, 56px) var(--ff);
+    --h2: bold clamp(20px, 5vw, 28px)/clamp(12px, 8vw, 40px) var(--ff);
+    --p: clamp(16px, 2vw, 16px)/clamp(24px, 3vw, 28px) var(--ff);
+    --section-margin: clamp(8px, 2vw, 40px);
+    --button-border-radius: clamp(12px, 3vw, 24px);
+
+    --background-color: #f7f7f7;
+    --input-border-color: #ccc;
+    --input-padding: clamp(4px, 1vw, 8px);
+    --input-border-radius: 4px;
+}
+
+/* General*/
+body {
+    margin: 0px;
+    font-family: var(--ff);
+}
+
+img {
+    width: 100%;
+    border-radius: clamp(12px, 2vw, 32px);
+}
+
+h1 {
+    font: var(--h1);
+}
+
+h2 {
+    font: var(--h2);
+}
+
+p {
+    font: var(--p);
+}
+
+a:hover {
+    scale: 1.05;
+    background-color: var(--coloraccent-hover);
+}
+
+.button1 {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: var(--coloraccent);
+    border-radius: var(--button-border-radius);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font: var(--p);
+}
+
+/* Navbar/Header*/
+
+header{
+    position: sticky;
+    top: 0px;
+}
+
+nav {
+
+    background-color: var(--coloraccent);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    right: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font: var(--p);
+    border-radius: clamp(12px, 3vw, 24px);
+}
+
+nav ul li a:hover {
+    background-color: var(--coloraccent-hover);
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle div {
+    border-radius: 5px;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    position: fixed;
+    top: 53px;
+    /* Höhe des Nav-Elements */
+    right: -250px;
+    /* Start off-screen */
+    width: 250px;
+    height: calc(100% - 53px);
+    /* Höhe des Nav-Elements abziehen */
+    background-color: var(--coloraccent);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: right 0.3s ease;
+}
+
+.sidebar.active {
+    right: 0;
+    /* Slide in */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    /* Keine Bullet Points */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: var(--color1);
+    text-decoration: none;
+    font: var(--p);
+    padding: 10px;
+    display: flex;
+    padding-left: 20px;
+    border-radius: var(--button-border-radius);
+
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .sidebar {
+        width: 200px;
+        /* Kleinere Breite für kleine Bildschirme */
+        right: -200px;
+        /* Start off-screen entsprechend der Sidebar-Breite */
+    }
+
+    nav ul {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 150px;
+        /* Noch kleinere Breite für sehr kleine Bildschirme */
+        right: -150px;
+        /* Start off-screen entsprechend der Sidebar-Breite */
+    }
+}
+
+/*Credits Pop-up*/
+.popup-bottom {
+    position: fixed;
+    bottom: 20px; /* Abstand vom unteren Rand */
+    right: 20px;  /* Abstand vom rechten Rand */
+    background-color: var(--color1);
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    max-width: 300px; /* Maximale Breite des Pop-ups */
+    opacity: 0; /* Startdeckkraft auf 0 für Animation */
+    transform: translateY(20px); /* Startposition leicht nach unten versetzt */
+    animation: slideIn 2s forwards; /* Animationsdetails, verlängert auf 1 Sekunde */
+  }
+  
+  /* Schließen Button */
+  .close-btn {
+    background-color: var(--coloraccent);
+    border: none;
+    border-radius: var(--button-border-radius);
+    cursor: pointer;
+  }
+  
+  /* Animation für das Einblenden des Pop-ups */
+  @keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+/* Hero*/
+.herosection {
+    gap: clamp(4px, 2vw, 40px);
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    margin: clamp(12px, 1vw, 24px);
+    margin-bottom: clamp(0px, 8vw, 40px);
+}
+
+.image-or-text {
+    top: 0px;
+    flex: 1;
+    min-width: 250px;
+    display: block;
+}
+
+.action-button{
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+}
+/* Section*/
+.section {
+    background-color: var(--coloraccent);
+    color: var(--color1);
+    padding: clamp(12px, 2vw, 40px);
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: clamp(0px, 8vw, 40px);
+}
+
+/* Cards*/
+.card-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: clamp(12px, 1vw, 24px);
+    gap: var(--section-margin);
+}
+
+.card-group {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--section-margin);
+}
+
+.card {
+    flex: 1;
+    min-width: 200px;
+}
+
+.card-heading {
+    color: var(--coloraccent);
+}
+
+@media (max-width: 210px) {
+    .card-group {
+        min-width: 100px;
+    }
+}
+
+/*Kontaktformular*/
+
+.kontakt{
+    margin: clamp(16px, 2vw, 28px);
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+.maskottchen{
+    padding: clamp(4px, 4vw, 56px);
+    align-self: center; 
+    min-width: 200px;
+    max-width: 500px;
+    right: 0px;
+    flex: 1;
+}
+
+.container {
+    background-color: var(--color1);
+    border-radius: var(--container-border-radius);
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: var(--color2);
+    font: var(--p);
+}
+
+input,
+textarea {
+    padding: var(--input-padding);
+    margin-bottom: var(--input-padding);
+    border: 1px solid var(--input-border-color);
+    border-radius: var(--input-border-radius);
+    font: var(--p);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: var(--coloraccent);
+    color: var(--color1);
+    padding: var(--input-padding);
+    margin-top: 10px;
+    border: none;
+    border-radius: var(--input-border-radius);
+    cursor: pointer;
+    font: var(--p);
+}
+
+button:hover {
+    scale: 1.05;
+    background-color: var(--coloraccent-hover);
+}
+/* Karte*/
+.karte{
+    color: var(--color1);
+    padding: clamp(16px, 2vw, 28px);
+    background-color: var(--coloraccent);
+}
+#map-container{
+    color: var(--color1);
+    height: clamp(300px, 20vw, 500px);
+}
+
+/*Footer */
+footer{
+    background-color: var(--coloraccent);
+    padding: clamp(16px, 2vw, 28px);
+    text-align: center;
+    color: var(--color1);
+}
+footer a{
+    margin: 15px;
+    font: var(--p);
+    color: var(--color1);
+}
