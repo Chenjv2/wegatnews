@@ -204,6 +204,23 @@ nav ul li a:hover {
         /* Start off-screen entsprechend der Sidebar-Breite */
     }
 }
+/* Artikel Section */
+.artikel-lesen{
+    gap: clamp(4px, 2vw, 40px);
+    text-align: left;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    margin: clamp(12px, 1vw, 24px);
+    margin-bottom: clamp(0px, 8vw, 40px);
+}
+
+.image-or-text {
+    top: 0px;
+    flex: 1;
+    min-width: 250px;
+    display: block;
+}
 /* Blog Section */
 .blog-section {
     padding-bottom: 20px;
@@ -283,11 +300,7 @@ nav ul li a:hover {
 }
 
 /* Extra Anpassung für sehr kleine Displays */
-@media (max-width: 480px) {
-    .blog-section {
-        padding: 20px 10px;
-    }
-}
+
 
 /* Karte*/
 .karte {
