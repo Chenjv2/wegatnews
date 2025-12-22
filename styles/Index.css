@@ -84,8 +84,7 @@ nav {
 
 section{
     margin: var(--section-margin);
-    display: flex;
-    flex-wrap: wrap;
+    text-align: center;
     
 }
 #willkommen{
