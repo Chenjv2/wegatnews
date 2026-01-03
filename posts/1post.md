@@ -1,5 +1,5 @@
 ---
-title: TEst Digitalisierung an der Schule – langsam aber stetig
+title: Digitalisierung an der Schule – langsam aber stetig
 date: "2024-01-01"
 author: "Vincent Cui 10b"
 image: "/article-images/Schreibmaschine.webp"
