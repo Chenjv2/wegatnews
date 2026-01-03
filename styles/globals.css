@@ -1,42 +1,345 @@
+
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --ff: "Inter", sans-serif;
+    --color1: white;
+    --color2: black;
+    --color3: rgb(165, 162, 162);
+    --coloraccent: rgba(0, 102, 150);
+    --coloraccent-hover: rgb(0, 72, 105);
+    --coloraccent2: rgb(1, 173, 173);
+    --h1: bold clamp(24px, 5vw, 40px)/clamp(16px, 12vw, 56px) var(--ff);
+    --h2: bold clamp(20px, 5vw, 28px)/clamp(12px, 8vw, 40px) var(--ff);
+    --p: clamp(16px, 2vw, 16px)/clamp(24px, 3vw, 28px) var(--ff);
+    --section-margin: clamp(16px, 2vw, 40px);
+    --button-border-radius: clamp(12px, 3vw, 24px);
+
+    --background-color: #f7f7f7;
+    --input-border-color: #ccc;
+    --input-padding: clamp(4px, 1vw, 8px);
+    --input-border-radius: 4px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
+/* General*/
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+    background-color: var(--color1);
+    margin: 0px;
+    font-family: var(--ff);
+    color: var(--color2)
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+img {
+    width: 100%;
+    border-radius: clamp(12px, 2vw, 32px);
+    height: auto;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+h1 {
+    font: var(--h1);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+h2 {
+    font: var(--h2);
+    padding: 0px;
+    margin: 0px;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+p {
+    font: var(--p);
+}
+
+a:hover {
+    scale: 1.05;
+    background-color: var(--coloraccent-hover);
+}
+
+.button1 {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: var(--coloraccent);
+    border-radius: var(--button-border-radius);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font: var(--p);
+}
+
+/* Navbar/Header*/
+
+header {
+    position: sticky;
+    top: 0px;
+    max-height: 200px;
+    z-index: 1000;
+}
+
+nav {
+
+    background-color: var(--coloraccent);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section{
+    margin: var(--section-margin);
+    text-align: center;
+    
+}
+#willkommen{
+    width: 100%;
+    /*max-height: 400px;*/
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    max-width: 500px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    right: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font: var(--p);
+    border-radius: clamp(12px, 3vw, 24px);
+}
+
+nav ul li a:hover {
+    background-color: var(--coloraccent-hover);
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle div {
+    border-radius: 5px;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    position: fixed;
+    top: 87.77px;
+    /* Höhe des Nav-Elements */
+    right: -250px;
+    /* Start off-screen */
+    width: 250px;
+    height: calc(100% - 53px);
+    /* Höhe des Nav-Elements abziehen */
+    background-color: var(--coloraccent);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: right 0.3s ease;
+}
+
+.sidebar.active {
+    right: 0;
+    /* Slide in */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    /* Keine Bullet Points */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: var(--color1);
+    text-decoration: none;
+    font: var(--p);
+    padding: 10px;
+    display: flex;
+    padding-left: 20px;
+    border-radius: var(--button-border-radius);
+
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .sidebar {
+        width: 200px;
+        /* Kleinere Breite für kleine Bildschirme */
+        right: -200px;
+        /* Start off-screen entsprechend der Sidebar-Breite */
+    }
+
+    nav ul {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 150px;
+        /* Noch kleinere Breite für sehr kleine Bildschirme */
+        right: -150px;
+        /* Start off-screen entsprechend der Sidebar-Breite */
+    }
+}
+/* Artikel Section */
+.artikel-lesen{
+    gap: clamp(4px, 2vw, 40px);
+    text-align: left;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    margin: clamp(12px, 1vw, 24px);
+    margin-bottom: clamp(0px, 8vw, 40px);
+}
+
+.image-or-text {
+    top: 0px;
+    flex: 1;
+    min-width: 250px;
+    display: block;
+}
+/* Blog Section */
+.blog-section {
+    text-align: left;
+    display: block;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Flex Container für Blog Einträge */
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Wichtig für Responsivität */
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+/* Einzelner Blog Eintrag */
+.blog-entry {
+    z-index: 1;
+    flex: 1 1 300px;
+    /* Mindestbreite 300px */
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-entry:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Bild */
+.blog-entry img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* Titel */
+.blog-entry h3 {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Text */
+.blog-entry {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Meta Infos */
+.blog-entry .meta {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #999;
+}
+
+/* Button */
+.blog-entry a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #0077ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.blog-entry a:hover {
+    background-color: #005fcc;
+}
+
+/* Extra Anpassung für sehr kleine Displays */
+
+
+/* Karte*/
+.karte {
+    color: var(--color1);
+    padding: clamp(16px, 2vw, 28px);
+    background-color: var(--coloraccent);
+}
+
+#map-container {
+    color: var(--color1);
+    height: clamp(300px, 20vw, 500px);
+}
+
+.archiv{
+    text-align: left;
+}
+/*Footer */
+footer {
+    background-color: var(--coloraccent);
+    padding: clamp(16px, 2vw, 28px);
+    text-align: center;
+    color: var(--color1);
+}
+
+footer a {
+    margin: 15px;
+    font: var(--p);
+    color: var(--color1);
 }

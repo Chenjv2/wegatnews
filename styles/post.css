@@ -1,0 +1,85 @@
+body {
+    background-color: var(--color1);
+    margin: 0px;
+    font-family: var(--ff);
+    color: var(--color2)
+}
+
+img {
+    align-self: center;
+    width: 100%;
+    border-radius: clamp(12px, 2vw, 32px);
+    height: auto;
+}
+
+h1 {
+    font: var(--h1);
+}
+
+h2 {
+    font: var(--h2);
+    padding: 0px;
+    margin: 0px;
+}
+
+p {
+    font: var(--p);
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+a:hover {
+    scale: 1.05;
+    background-color: var(--coloraccent-hover);
+}
+
+.button1 {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: var(--coloraccent);
+    border-radius: var(--button-border-radius);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font: var(--p);
+}
+
+.post {
+
+    text-align: center;
+    display: block;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.post-container{
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    /* Wichtig für Responsivität */
+    gap: 20px;
+    padding-bottom: 20px;
+    color: black;
+}
+.image-or-text {
+    top: 0px;
+    flex: 1;
+    min-width: 250px;
+    display: block;
+}
+
+.post-image {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+}
+.post-title{
+    font: var(--h1);
+    margin-bottom: 10px;
+    line-height: normal;
+}
+.post-content {
+    width: 100%;
+}
