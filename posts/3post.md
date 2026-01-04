@@ -1,6 +1,6 @@
 ---
 title: Unglaublich modern – die neuen 5er-Gänge
-date: "2023-12-01"
+date: "2012-12-01"
 author: "Vincent Cui 10b"
 image: "/article-images/5ergang.webp"
 image_source: "eigene Aufnahme"

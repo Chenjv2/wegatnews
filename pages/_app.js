@@ -18,7 +18,10 @@ export default function App({ Component, pageProps }) {
     <>
       {/* GLOBAL HEAD (applies to all pages) */}
       <Head>
-        <title>Dein Seitenname</title>
+        <title>
+          WE G(A)T NEWS, die unabhängige Schülerzeitung des Gymnasiums zum
+          Altenforst
+        </title>
         <meta
           name="description"
           content="Unabhängiger Blog für Information, Meinung und Umfragen"
@@ -42,10 +45,18 @@ export default function App({ Component, pageProps }) {
           </Link>
 
           <ul>
-            <li><Link href="/informativ">Informativ📖</Link></li>
-            <li><Link href="/Meinung">Meinung💣</Link></li>
-            <li><Link href="/umfragen">Umfragen🎤</Link></li>
-            <li><Link href="/mach-mit">Mach mit👋</Link></li>
+            <li>
+              <Link href="/informativ">Informativ📖</Link>
+            </li>
+            <li>
+              <Link href="/Meinung">Meinung💣</Link>
+            </li>
+            <li>
+              <Link href="/umfragen">Umfragen🎤</Link>
+            </li>
+            <li>
+              <Link href="/mach-mit">Mach mit👋</Link>
+            </li>
           </ul>
 
           <div
@@ -63,10 +74,18 @@ export default function App({ Component, pageProps }) {
 
         <div className={`sidebar ${open ? "active" : ""}`}>
           <ul>
-            <li><Link href="/informativ">Informativ📖</Link></li>
-            <li><Link href="/Meinung">Meinung💣</Link></li>
-            <li><Link href="/umfragen">Umfragen🎤</Link></li>
-            <li><Link href="/mach-mit">Mach mit👋</Link></li>
+            <li>
+              <Link href="/informativ">Informativ📖</Link>
+            </li>
+            <li>
+              <Link href="/Meinung">Meinung💣</Link>
+            </li>
+            <li>
+              <Link href="/umfragen">Umfragen🎤</Link>
+            </li>
+            <li>
+              <Link href="/mach-mit">Mach mit👋</Link>
+            </li>
           </ul>
         </div>
       </header>
