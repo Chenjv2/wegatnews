@@ -53,7 +53,7 @@ export default function Blog({ newestPosts, archivePosts }) {
         <div className="image-or-text">
           <h2>Ideen, Artikel, Probleme, Fragen?</h2>
           <p>
-            Einfach E-Mail an vincent.cui@altenforst.de oder per Teams an
+            Einfach E-Mail an info@wegatnews.de oder per Teams an
             Vincent Cui.
           </p>
           <p>
