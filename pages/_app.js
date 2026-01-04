@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import "../styles/post.css";
 import Link from "next/link";
+import Head from "next/head";
 import { useState, useEffect } from "react";
 
 export default function App({ Component, pageProps }) {
@@ -15,6 +16,25 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
+      {/* GLOBAL HEAD (applies to all pages) */}
+      <Head>
+        <title>Dein Seitenname</title>
+        <meta
+          name="description"
+          content="Unabhängiger Blog für Information, Meinung und Umfragen"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+
+        {/* SEO / Social sharing */}
+        <meta property="og:title" content="Dein Seitenname" />
+        <meta
+          property="og:description"
+          content="Unabhängiger Blog für Information, Meinung und Umfragen"
+        />
+        <meta property="og:type" content="website" />
+      </Head>
+
       <header>
         <nav>
           <Link href="/" className="logo">
