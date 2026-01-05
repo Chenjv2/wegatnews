@@ -5,7 +5,7 @@ author: "Vincent Cui 10b"
 image: "/article-images/5ergang.webp"
 image_source: "eigene Aufnahme"
 tags: Informativ
-preview: "Der erste Eindruck- „Wow“. Von manchen Lehrern als „Neuneubau“ bezeichnet, war es lange eine abgesperrte Baustelle, doch jetzt konnte es erstmals von ein paar Schülern betreten werden, oft um bei der Inneneinrichtung zu helfen. Die hat es in sich..."
+preview: "Der erste Eindruck- „Wow“. Von manchen Lehrern als „Neuneubau“ bezeichnet, war es lange eine abgesperrte Baustelle, doch jetzt konnte es erstmals von ein paar Schülern betreten werden, oft um bei der Inneneinrichtung zu helfen. Die hat es in sich"
 ---
 
 Der erste Eindruck- „Wow“. Von manchen Lehrern als „Neuneubau“ bezeichnet, war es lange eine abgesperrte Baustelle, doch jetzt konnte es erstmals von ein paar Schülern betreten werden, oft um bei der Inneneinrichtung zu helfen. Die hat es in sich. In jedem Klassenraum gibt es Teppich, neuartige Stühle und Tische, und natürlich, ein Smartboard. Dieses ist mit dem Internet verbunden, man kann darauf YouTube schauen. Mit einem Klick ist die Tafel sauber, Tafeldienst entfällt. Zusätzlich gibt es separate Räume für Gruppenarbeiten, welche Klassen nutzen können.

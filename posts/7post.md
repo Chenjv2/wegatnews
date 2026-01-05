@@ -5,7 +5,7 @@ author: "Sophie Soika"
 image: "/article-images/7.webp"
 image_source: "https://unsplash.com/de/fotos/eine-gruppe-verschiedener-social-media-logos-HBkpnDVc_Ic"
 tags: Informativ
-preview: "Wir kennen es doch wirklich alle. Schule ist zuende, wir kommen zuhause an und uns ist direkt langweilig. Und was machen wir dann? Richtig, wir gehen auf Social Media. Entweder TikTok, Instagram oder YouTube... Aber ist das wirklich so eine gute Idee?..."
+preview: "Wir kennen es doch wirklich alle. Schule ist zuende, wir kommen zuhause an und uns ist direkt langweilig. Und was machen wir dann? Richtig, wir gehen auf Social Media. Entweder TikTok, Instagram oder YouTube... Aber ist das wirklich so eine gute Idee?"
 ---
 
 Wir kennen es doch wirklich alle. Schule ist zuende, wir kommen zuhause an und uns ist direkt langweilig. Und was machen wir dann? Richtig, wir gehen auf Social Media. Entweder TikTok, Instagram oder YouTube... Aber ist das wirklich so eine gute Idee? 

@@ -1,10 +1,10 @@
 ---
 title: Digitalisierung an der Schule – langsam aber stetig
-date: "2024-01-01"
+date: "2023-06-01"
 author: "Vincent Cui 10b"
 image: "/article-images/Schreibmaschine.webp"
 image_source: "https://unsplash.com/de/fotos/nahaufnahme-einer-altmodischen-schreibmaschine-eHLCamXTGMY"
-preview: "Der ewige Kampf mit dem Beamer, dem Schulinternet, wir kennen es. Es wäre sehr weit her geholt zu behaupten, dass die Digitalisierung an unserer Schule perfekt laufen würde. Probleme mit Schulmanager, defekten Computer, 4 verschiedene Internet-Netzwerke (GAT-Heizung?)..."
+preview: "Der ewige Kampf mit dem Beamer, dem Schulinternet, wir kennen es. Es wäre sehr weit her geholt zu behaupten, dass die Digitalisierung an unserer Schule perfekt laufen würde. Probleme mit Schulmanager, defekten Computer, 4 verschiedene Internet-Netzwerke (GAT-Heizung?)"
 ---
 
 Der ewige Kampf mit dem Beamer, dem Schulinternet, wir kennen es. Es wäre sehr weit her geholt zu behaupten, dass die Digitalisierung an unserer Schule perfekt laufen würde. Probleme mit Schulmanager, defekten Computer, 4 verschiedene Internet-Netzwerke (GAT-Heizung?). Schüler wie Lehrer verfluchen täglich all diese Dinge, zurecht. Es besteht viel Luft nach oben, und es wird nicht besser, wenn die 5.Klassen bald in den neuen Gang mit Smartboards und Kabelinternet einziehen werden.

@@ -20,7 +20,7 @@ function DisplayContainer({ data }) {
           <div key={post.slug} className="blog-entry">
             <img src={post.image} alt="blog-foto" />
             <h3>{post.title}</h3>
-            <p>{post.preview}</p>
+            <p>{post.preview}...</p>
 
             <div className="meta">
               {post.date} · {post.author}

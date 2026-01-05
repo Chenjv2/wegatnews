@@ -5,7 +5,7 @@ author: "Ouijdan Hussein 10b"
 image: "/article-images/5.webp"
 image_source: "https://unsplash.com/de/fotos/die-hausnummer-67-ist-auf-einer-backsteinwand-zu-sehen-6Nxy8b62JiI"
 tags: Informativ
-preview: "Jeder hört es, viele benutzen es, nur wenige wissen warum.Seid gespannt es wird brilliant! ..."
+preview: "Jeder hört es, viele benutzen es, nur wenige wissen warum.Seid gespannt es wird brilliant!"
 ---
 
 Jeder hört es, viele benutzen es, nur wenige wissen warum.  
