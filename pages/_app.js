@@ -49,7 +49,7 @@ export default function App({ Component, pageProps }) {
               <Link href="/informativ">Informativ📖</Link>
             </li>
             <li>
-              <Link href="/Meinung">Meinung💣</Link>
+              <Link href="/meinung">Meinung💣</Link>
             </li>
             <li>
               <Link href="/umfragen">Umfragen🎤</Link>
@@ -78,7 +78,7 @@ export default function App({ Component, pageProps }) {
               <Link href="/informativ">Informativ📖</Link>
             </li>
             <li>
-              <Link href="/Meinung">Meinung💣</Link>
+              <Link href="/meinung">Meinung💣</Link>
             </li>
             <li>
               <Link href="/umfragen">Umfragen🎤</Link>
