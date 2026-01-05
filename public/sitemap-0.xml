@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://yourdomain.com</loc><lastmod>2026-01-05T11:31:58.209Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://yourdomain.com/impressum</loc><lastmod>2026-01-05T11:31:58.210Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://yourdomain.com/informativ</loc><lastmod>2026-01-05T11:31:58.210Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://yourdomain.com/mach-mit</loc><lastmod>2026-01-05T11:31:58.210Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://yourdomain.com/meinung</loc><lastmod>2026-01-05T11:31:58.210Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://yourdomain.com/umfragen</loc><lastmod>2026-01-05T11:31:58.210Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://yourdomain.com/blog/2post</loc><lastmod>2026-01-05T11:31:58.210Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://yourdomain.com/blog/1post</loc><lastmod>2026-01-05T11:31:58.210Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://yourdomain.com/blog/6post</loc><lastmod>2026-01-05T11:31:58.210Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://yourdomain.com/blog/4post</loc><lastmod>2026-01-05T11:31:58.210Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://yourdomain.com/blog/9post</loc><lastmod>2026-01-05T11:31:58.210Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://yourdomain.com/blog/8post</loc><lastmod>2026-01-05T11:31:58.210Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://yourdomain.com/blog/5post</loc><lastmod>2026-01-05T11:31:58.210Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://yourdomain.com/blog/7post</loc><lastmod>2026-01-05T11:31:58.210Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://yourdomain.com/blog/3post</loc><lastmod>2026-01-05T11:31:58.210Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+</urlset>
