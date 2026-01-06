@@ -3,7 +3,7 @@ export default function InformativIndex() {
     <main>
       <section className="archiv">
         <h1>Informativ 📖</h1>
-        <p>Berichte, Argumentationen, Stellungnahmen. Sauberer Jornalismus</p>
+        <p>Berichte, Argumentationen, Stellungnahmen. Sachliche Diskussionen</p>
         <p><b>Coming soon</b></p>
       </section>
     </main>

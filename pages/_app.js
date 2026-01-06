@@ -96,7 +96,7 @@ export default function App({ Component, pageProps }) {
         <Link href="/impressum">Datenschutz</Link>
         <Link href="/impressum">Impressum</Link>
         <Link href="/impressum">Cookies</Link>
-        <p>© 2026 Manche Rechte vorbehalten</p>
+        <p>© 2026 WE G(A)T NEWS</p>
       </footer>
     </>
   );

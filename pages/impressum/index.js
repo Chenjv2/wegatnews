@@ -9,7 +9,8 @@ export default function InformativIndex() {
           Altenforst, Klasse 10b)
         </p>
         <p>
-          <b>Gesetzlicher Verantwortlicher:</b> Yongcheng Chen
+          <b>Gesetzlicher Verantwortlicher für minderjährige:</b> Yongcheng Chen (Vater von
+          Vincent Cui)
         </p>
         <p>
           <b>Chefredakteurin:</b> Ouijdan Hussein (Gymnasium zum Altenforst,
@@ -22,16 +23,13 @@ export default function InformativIndex() {
         <p>
           Diese Webseite wurde mithilfe React und Next.js erstellt. Die
           Redaktion wird ausschließlich von Schüler*innnen geführt und ist
-          unabhängig von der Schule
-        </p>
-        <p>
-          <b>Email:</b> info@wegatnews.de
-        </p>
-        <p>
-          <b>Email:</b> ouijdan.hussein@altenforst.de
+          unabhängig von der Schule.
         </p>
         <p>
           <b>Email:</b> vincent.cui@altenforst.de
+        </p>
+        <p>
+          <b>Email:</b> ouijdan.hussein@altenforst.de
         </p>
         <p> Städtisches Gymnasium Zum Altenforst Troisdorf</p>
         <p>Zum Altenforst 10 53840 Troisdorf </p>
