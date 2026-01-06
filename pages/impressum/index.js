@@ -5,11 +5,7 @@ export default function InformativIndex() {
         <h1>Impressum</h1>
         <h2>Diensteanbieter im Sinne des § 5 DDG</h2>
         <p>
-          <b>Allgemeine Geschäftsführung</b> Vincent Cui (Gymnasium zum
-          Altenforst, Klasse 10b)
-        </p>
-        <p>
-          <b>Gesetzlicher Verantwortlicher für minderjährige:</b> Yongcheng Chen (Vater von
+          <b>Gesetzlicher Verantwortlicher:</b> Yongcheng Chen (Vater von
           Vincent Cui)
         </p>
         <p>
