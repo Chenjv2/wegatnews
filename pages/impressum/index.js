@@ -9,11 +9,23 @@ export default function InformativIndex() {
           Vincent Cui)
         </p>
         <p>
-          <b>Chefredakteurin:</b> Ouijdan Hussein (Gymnasium zum Altenforst,
+          <b>Website, Design, Programmierung, Debugging, Sichcerheit, Internetadresse, Suchmaschinenranking:</b> Vincent Cui (Gymnasium zum Altenforst,
           Klasse 10b)
         </p>
         <p>
-          <b>Technik und Website:</b> Vincent Cui (Gymnasium zum Altenforst,
+          <b>Rechtliches, Datenschutz, Copyright:</b> Vincent Cui (Gymnasium zum Altenforst,
+          Klasse 10b)
+        </p>
+        <p>
+          <b>Beziehungen mit anderen Zeitunge, zum Beispiel Münster:</b> Vincent Cui (Gymnasium zum Altenforst,
+          Klasse 10b)
+        </p>
+         <p>
+          <b>Werbung:</b> Philipp Borsch (Gymnasium zum Altenforst,
+          Klasse 10b)
+        </p>
+         <p>
+          <b>Idee:</b> Ouijdan Hussein (Gymnasium zum Altenforst,
           Klasse 10b)
         </p>
         <p>
@@ -23,9 +35,6 @@ export default function InformativIndex() {
         </p>
         <p>
           <b>Email:</b> vincent.cui@altenforst.de
-        </p>
-        <p>
-          <b>Email:</b> ouijdan.hussein@altenforst.de
         </p>
         <p> Städtisches Gymnasium Zum Altenforst Troisdorf</p>
         <p>Zum Altenforst 10 53840 Troisdorf </p>
