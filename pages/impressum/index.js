@@ -36,9 +36,14 @@ export default function InformativIndex() {
         </p>
         <p>
           <b>Email:</b> vincent.cui@altenforst.de
+        </p>
+        <p>
           <b>Email:</b> philipp.borsch@altenforst.de
+        </p>
+        <p>
           <b>Email:</b> ouijdan.hussein@altenforst.de
         </p>
+        <h2>Anschrift der Schule</h2>
         <p> Städtisches Gymnasium Zum Altenforst Troisdorf</p>
         <p>Zum Altenforst 10 53840 Troisdorf </p>
 
