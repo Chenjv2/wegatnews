@@ -5,28 +5,29 @@ export default function InformativIndex() {
         <h1>Impressum</h1>
         <h2>Diensteanbieter im Sinne des § 5 DDG</h2>
         <p>
-          <b>Gesetzlicher Verantwortlicher:</b> Yongcheng Chen (Vater von
-          Vincent Cui)
+          <b>Verantwortlicher für diese Seite:</b> Vincent Cui (Gymnasium zum
+          Altenforst, Klasse 10b), ggf. Yongcheng Chen (Vater von Vincent Cui)
         </p>
         <p>
-          <b>Website, Design, Programmierung, Debugging, Sichcerheit, Internetadresse, Suchmaschinenranking:</b> Vincent Cui (Gymnasium zum Altenforst,
-          Klasse 10b)
+          <b>
+            Website, Design, Programmierung, Debugging, Sichcerheit,
+            Internetadresse, Suchmaschinenranking:
+          </b>{" "}
+          Vincent Cui (Gymnasium zum Altenforst, Klasse 10b)
         </p>
         <p>
-          <b>Rechtliches, Datenschutz, Copyright:</b> Vincent Cui (Gymnasium zum Altenforst,
-          Klasse 10b)
+          <b>Rechtliches, Datenschutz, Copyright:</b> Vincent Cui (Gymnasium zum
+          Altenforst, Klasse 10b)
         </p>
         <p>
-          <b>Beziehungen mit anderen Zeitunge, zum Beispiel Münster:</b> Vincent Cui (Gymnasium zum Altenforst,
-          Klasse 10b)
+          <b>Beziehungen mit anderen Zeitunge, zum Beispiel Münster:</b> Vincent
+          Cui (Gymnasium zum Altenforst, Klasse 10b)
         </p>
-         <p>
-          <b>Werbung:</b> Philipp Borsch (Gymnasium zum Altenforst,
-          Klasse 10b)
+        <p>
+          <b>Werbung:</b> Philipp Borsch (Gymnasium zum Altenforst, Klasse 10b)
         </p>
-         <p>
-          <b>Idee:</b> Ouijdan Hussein (Gymnasium zum Altenforst,
-          Klasse 10b)
+        <p>
+          <b>Idee:</b> Ouijdan Hussein (Gymnasium zum Altenforst, Klasse 10b)
         </p>
         <p>
           Diese Webseite wurde mithilfe React und Next.js erstellt. Die
@@ -35,6 +36,8 @@ export default function InformativIndex() {
         </p>
         <p>
           <b>Email:</b> vincent.cui@altenforst.de
+          <b>Email:</b> philipp.borsch@altenforst.de
+          <b>Email:</b> ouijdan.hussein@altenforst.de
         </p>
         <p> Städtisches Gymnasium Zum Altenforst Troisdorf</p>
         <p>Zum Altenforst 10 53840 Troisdorf </p>
