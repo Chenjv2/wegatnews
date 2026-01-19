@@ -10,7 +10,7 @@ export default function InformativIndex() {
         </p>
         <p>
           <b>
-            Website, Design, Programmierung, Debugging, Sichcerheit,
+            Website, Design, Programmierung, Debugging, Sicherheit,
             Internetadresse, Suchmaschinenranking:
           </b>{" "}
           Vincent Cui (Gymnasium zum Altenforst, Klasse 10b)
@@ -20,7 +20,7 @@ export default function InformativIndex() {
           Altenforst, Klasse 10b)
         </p>
         <p>
-          <b>Beziehungen mit anderen Zeitunge, zum Beispiel Münster:</b> Vincent
+          <b>Beziehungen mit anderen Zeitungen, zum Beispiel Münster:</b> Vincent
           Cui (Gymnasium zum Altenforst, Klasse 10b)
         </p>
         <p>
