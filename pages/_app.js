@@ -24,7 +24,15 @@ export default function App({ Component, pageProps }) {
         </title>
         <meta
           name="description"
-          content="Unabhängiger Blog für Information, Meinung und Umfragen"
+          content="Unabhängiger Blog für Information, Meinung und Umfragen am Gymnasium zum Altenforst Troisdorf. Hier ist die Stimme der Schüler*innen!"
+        />
+        <meta
+          name="keywords"
+          content="Schülerzeitung, Gymnasium zum Altenforst, Troisdorf, News, Meinungen, Umfragen"
+        />
+        <meta
+          name="author"
+          content="Vincent Cui"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
