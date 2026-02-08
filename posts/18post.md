@@ -1,5 +1,5 @@
 ---
-title: "Freizeit vs. Hausaufgaben – Wie man die super Balance im Alltag findet"
+title: "Interesse am Forschen?"
 date: "2026-02-05"
 author: "Kati Rizmanoski 9a, Nori Dietzel 9a"
 image: "/article-images/18.webp"
