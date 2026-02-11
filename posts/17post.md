@@ -8,7 +8,7 @@ tags: Informativ
 preview: "Wer kennt es nicht? Den inneren, nervenzerreißenden Kampf mit sich selbst, wenn es dazu kommt Hausaufgaben zu machen. Sie werden weggeschoben, beiseitegelegt, ignoriert – alles wirkt attraktiver als die Hausaufgaben. Hier sind ein paar Tips die helfen könnten."
 ---
 
-**Freizeit vs. Hausaufgaben – Wie man die super Balance im Alltag findet**
+
 Wer kennt es nicht? Den inneren, nervenzerreißenden Kampf mit sich selbst, wenn es dazu kommt Hausaufgaben zu machen. Sie werden weggeschoben, beiseitegelegt, ignoriert – alles wirkt attraktiver als die Hausaufgaben. Um Schwierigkeiten mit Lehrern und Eltern zu vermeiden, müssen sie letztendlich gemacht werden. Hier ein paar Tipps, damit du nicht den ganzen Nachmittag am Schreibtisch verbringen musst:  
 
 *1. Schritt*: Sofort die Hausaufgaben notieren  

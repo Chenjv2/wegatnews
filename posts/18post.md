@@ -8,8 +8,6 @@ tags: Informativ
 preview: "Möchtest du wissen, warum Flamingos, wenn sie tot sind, noch immer auf einem Bein stehen können? Warum Formel 1 Autos nicht abheben? Was das gesündeste Gemüse der Welt ist? Möchtest du eine essbare Batterie herstellen oder auch einfach nur mehr MINTec Punkte sammeln?"
 ---
 
-**Interesse am Forschen?** 
-
 Möchtest du wissen, warum Flamingos, wenn sie tot sind, noch immer auf einem Bein stehen können? Warum Formel 1 Autos nicht abheben? Was das gesündeste Gemüse der Welt ist? Möchtest du eine essbare Batterie herstellen oder auch einfach nur mehr MINTec Punkte sammeln?
 
 Wenn ja, dann bist du der/die richtige Kandidat*in für Jugend Forscht!  
