@@ -2,7 +2,7 @@
 title: Digitalisierung an der Schule – langsam aber stetig
 date: "2023-06-01"
 author: "Vincent Cui 10b"
-image: "/article-images/Schreibmaschine.webp"
+image: "/article-images/1.webp"
 image_source: "https://unsplash.com/de/fotos/nahaufnahme-einer-altmodischen-schreibmaschine-eHLCamXTGMY"
 preview: "Der ewige Kampf mit dem Beamer, dem Schulinternet, wir kennen es. Es wäre sehr weit her geholt zu behaupten, dass die Digitalisierung an unserer Schule perfekt laufen würde. Probleme mit Schulmanager, defekten Computer, 4 verschiedene Internet-Netzwerke (GAT-Heizung?)"
 ---

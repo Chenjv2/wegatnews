@@ -2,7 +2,7 @@
 title: "Wenn das Toilettenmonster wieder zuschlägt..."
 date: "2019-01-01"
 author: "Ouijdan Hussein 10b"
-image: "/article-images/zerstoerte Toillete.webp"
+image: "/article-images/9.webp"
 image_source: "Unsplash https://unsplash.com/de/fotos/ein-schmutziges-badezimmer-mit-einer-kaputten-toilette-darin-I0rfPQhep7c"
 tags: "Meinung"
 preview: "Am Altenforst läuft schon lange das Gerücht, dass ein Ungeheuer in den Toiletten sein Unwesen treibt. In einer Sage, zu lange her um richtig erinnert zu werden, gab es schon die ersten Prophezeiungen zu dem kommenden Unheil. Doch leider wurde sie nie ernst genommen – und nun ist es zu spät"

@@ -1,7 +1,7 @@
 ---
 title: "Social ohne Media: Was mache ich mit meinen Freunden? " 
 date: "2026-02-19"
-author: "Sophie Soika"
+author: "Sophie Soika 9d"
 image: "/article-images/19.webp"
 image_source: "https://unsplash.com/de/fotos/drei-jugendliche-laufen-durch-eine-trockene-wiese-o8gGuhfjB2M"
 tags: Informativ

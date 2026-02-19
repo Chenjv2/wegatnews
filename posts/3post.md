@@ -2,7 +2,7 @@
 title: Unglaublich modern – die neuen 5er-Gänge
 date: "2012-12-01"
 author: "Vincent Cui 10b"
-image: "/article-images/5ergang.webp"
+image: "/article-images/3.webp"
 image_source: "eigene Aufnahme"
 tags: Informativ
 preview: "Der erste Eindruck- „Wow“. Von manchen Lehrern als „Neuneubau“ bezeichnet, war es lange eine abgesperrte Baustelle, doch jetzt konnte es erstmals von ein paar Schülern betreten werden, oft um bei der Inneneinrichtung zu helfen. Die hat es in sich"
