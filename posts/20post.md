@@ -2,7 +2,7 @@
 title: "Happy Franky-Plötzliche Schließung?" 
 date: "2026-02-26"
 author: "Karlotta Rizmanoski 6b"
-image: "/article-images/5.webp"
+image: "/article-images/20.webp"
 image_source: "https://unsplash.com/de/fotos/ein-rot-weisses-schild-an-einer-betonwand-T-y-hZzNXWA"
 tags: Informativ
 preview: "Das Happy Franky ist ein Erlebniscenter, in dem es viele verschiedene Arten von spielen gibt, aufgeteilt in mehrere Etagen, inclusive Stunt Werk, die den verschiedenen Mietern gehören. "
