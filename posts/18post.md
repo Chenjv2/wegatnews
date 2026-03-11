@@ -1,7 +1,8 @@
 ---
 title: "Interesse am Forschen?"
 date: "2026-02-05"
-author: "Kati Rizmanoski 9a, Nori Dietzel 9a"
+author: "Kati und Nori, 9.Klasse"
+author-full-name: "Kati Rizmanoski 9a, Nori Dietzel 9a"
 image: "/article-images/18.webp"
 image_source: "https://unsplash.com/de/fotos/weisses-mikroskop-auf-schwarzem-tisch-gKUC4TMhOiY"
 tags: Informativ

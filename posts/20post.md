@@ -1,7 +1,8 @@
 ---
 title: "Happy Franky-Plötzliche Schließung?" 
 date: "2026-02-26"
-author: "Karlotta Rizmanoski 6b"
+author: "Karlotta, 6.Klasse"
+author-full-name: "Karlotta Rizmanoski 6b"
 image: "/article-images/20.webp"
 image_source: "https://unsplash.com/de/fotos/ein-rot-weisses-schild-an-einer-betonwand-T-y-hZzNXWA"
 tags: Informativ

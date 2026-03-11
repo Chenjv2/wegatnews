@@ -1,7 +1,8 @@
 ---
 title: Unglaublich modern – die neuen 5er-Gänge
 date: "2012-12-01"
-author: "Vincent Cui 10b"
+author: "Vincent, 10.Klasse"
+author-full-name: "Vincent Cui 10b"
 image: "/article-images/3.webp"
 image_source: "eigene Aufnahme"
 tags: Informativ

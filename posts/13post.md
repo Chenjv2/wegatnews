@@ -1,7 +1,8 @@
 ---
 title: "Zeit statt Zeug"
 date: "2026-01-15"
-author: "Amaya Ana Fischer 9d"
+author: "Amaya, 9.Klasse"
+author-full-name: "Amaya Ana Fischer 9d"
 image: "/article-images/13.webp"
 image_source: "https://unsplash.com/de/fotos/stapel-von-produkten-in-verschiedenen-farben-vhQ4BTH6mj4"
 tags: Informativ

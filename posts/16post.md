@@ -1,7 +1,8 @@
 ---
 title: "Mensa, ein guter Ort zum essen?"
 date: "2026-01-29"
-author: "Meryem Kangal 6b"
+author: "Meryem, 6.Klasse"
+author-full-name: "Meryem Kangal 6b"
 image: "/article-images/16.webp"
 image_source: "https://unsplash.com/de/fotos/schalen-aus-rostfreiem-stahl-5E0d3lfoC1w"
 tags: Informativ

@@ -1,7 +1,8 @@
 ---
 title: 5 Fakten über das Jahr 2025
 date: "2025-01-01"
-author: "Ouijdan Hussein 10b"
+author: "Ouijdan, 10.Klasse"
+author-full-name: "Ouijdan Hussein 10b"
 image: "/article-images/2.webp"
 image_source: "https://unsplash.com/de/fotos/nahaufnahme-einer-nummer-mit-blumen-darauf-qN_4d-A2xm8"
 tags: Informativ

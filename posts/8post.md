@@ -1,7 +1,8 @@
 ---
 title: Wichteln endlich ohne Stress 
 date: "2018-01-01"
-author: "Valeriia Mazur 10b"
+author: "Valeriia, 10.Klasse"
+author-full-name: "Valeriia Mazur 10b"
 image: "/article-images/8.webp"
 image_source: "https://unsplash.com/de/fotos/weisser-und-roter-blumenbeutel-c2ULvZriVNY"
 tags: Informativ

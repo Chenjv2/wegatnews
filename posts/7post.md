@@ -1,7 +1,8 @@
 ---
 title: "Social Media: Ist es wirklich so eine Gefahr?" 
 date: "2013-07-01"
-author: "Sophie Soika"
+author: "Sophie, 9.Klasse"
+author-full-name: "Sophie Soika 9d"
 image: "/article-images/7.webp"
 image_source: "https://unsplash.com/de/fotos/eine-gruppe-verschiedener-social-media-logos-HBkpnDVc_Ic"
 tags: Informativ

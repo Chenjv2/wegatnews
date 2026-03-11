@@ -1,7 +1,8 @@
 ---
 title: Schüler frieren in den Pausen - Lehrer genießen drinnen die Wärme 
 date: "2024-01-01"
-author: "Philipp Borsch 10b"
+author: "Philipp, 10.Klasse"
+author-full-name: "Philipp Borsch 10b"
 image: "/article-images/6.webp"
 image_source: "https://unsplash.com/de/fotos/ein-schneemann-steht-mitten-auf-einem-feld-CqBvboiSgQA"
 tags: Informativ

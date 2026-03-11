@@ -1,7 +1,8 @@
 ---
 title: Vielfältig - Voll - Vorbei - Das Jahr 2025
 date: "2026-01-14"
-author: "Ouijdan Hussein 10b"
+author: "Ouijdan, 10.Klasse"
+author-full-name: "Ouijdan Hussein 10b"
 image: "/article-images/11.webp"
 image_source: "https://unsplash.com/de/fotos/nahaufnahme-einer-uhr-an-einer-wand-Jr2vJlYz1sM"
 tags: Informativ

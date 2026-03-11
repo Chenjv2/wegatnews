@@ -1,7 +1,8 @@
 ---
 title: "Rezension: Horror Date"
 date: "2026-01-15"
-author: "Sophie Soika 9d"
+author: "Sophie, 9.Klasse"
+author-full-name: "Sophie Soika 9d"
 image: "/article-images/14.webp"
 image_source: "https://unsplash.com/de/fotos/frau-tragt-schwarzen-pullover-und-halt-handchen-mit-mann-in-grauer-anzugjacke-lSMf7GJoDz4"
 tags: Informativ

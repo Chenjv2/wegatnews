@@ -1,7 +1,8 @@
 ---
 title: Buchreview ,,Herr der Fliegen"
 date: "2026-01-15"
-author: "Amaya Ana Fischer 9d"
+author: "Amaya, 9.Klasse"
+author-full-name: "Amaya Ana Fischer 9d"
 image: "/article-images/12.webp"
 image_source: "Eigene Illustration"
 tags: Informativ

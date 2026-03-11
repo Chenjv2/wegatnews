@@ -1,7 +1,8 @@
 ---
 title:  "Effektiv für sich und andere - Schülerjobs" 
 date: "2026-01-22"
-author: "Valeriia Mazur 10b"
+author: "Valeriia, 10.Klasse"
+author-full-name: "Valeriia Mazur 10b"
 image: "/article-images/15.webp"
 image_source: "https://unsplash.com/de/fotos/mann-mit-kopfhorern-wahrend-er-auf-einem-stuhl-vor-dem-macbook-sitzt-4-EeTnaC1S4"
 tags: Informativ

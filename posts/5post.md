@@ -1,7 +1,8 @@
 ---
 title: "Umgangssprachliche Äußerungen erklärt: 67"
 date: "2015-01-01"
-author: "Ouijdan Hussein 10b"
+author: "Ouijdan, 10.Klasse"
+author-full-name: "Ouijdan Hussein 10b"
 image: "/article-images/5.webp"
 image_source: "https://unsplash.com/de/fotos/die-hausnummer-67-ist-auf-einer-backsteinwand-zu-sehen-6Nxy8b62JiI"
 tags: Informativ
