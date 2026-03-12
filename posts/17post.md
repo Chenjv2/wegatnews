@@ -6,11 +6,11 @@ author-full-name: "Ouijdan Hussein 10b"
 image: "/article-images/17.webp"
 image_source: "https://unsplash.com/de/fotos/eine-person-die-mit-einem-stift-auf-ein-notizbuch-schreibt-O04ybN0h1C8"
 tags: Informativ
-preview: "Wer kennt es nicht? Den inneren, nervenzerreißenden Kampf mit sich selbst, wenn es dazu kommt Hausaufgaben zu machen. Sie werden weggeschoben, beiseitegelegt, ignoriert – alles wirkt attraktiver als die Hausaufgaben. Hier sind ein paar Tips die helfen könnten."
+preview: "Wer kennt es nicht? Den inneren, nervenzerreißenden Kampf mit sich selbst, wenn es dazu kommt Hausaufgaben zu machen. Hier sind ein paar Tipps die helfen könnten."
 ---
 
 
-Wer kennt es nicht? Den inneren, nervenzerreißenden Kampf mit sich selbst, wenn es dazu kommt Hausaufgaben zu machen. Sie werden weggeschoben, beiseitegelegt, ignoriert – alles wirkt attraktiver als die Hausaufgaben. Um Schwierigkeiten mit Lehrern und Eltern zu vermeiden, müssen sie letztendlich gemacht werden. Hier ein paar Tipps, damit du nicht den ganzen Nachmittag am Schreibtisch verbringen musst:  
+Wer kennt es nicht? Den inneren, nervenzerreißenden Kampf mit sich selbst, wenn es dazu kommt Hausaufgaben zu machen. Sie werden weggeschoben, beiseitegelegt, ignoriert – alles wirkt attraktiver als die Hausaufgaben. Um Schwierigkeiten mit Lehrern und Eltern zu vermeiden, müssen sie letztendlich gemacht werden. Hier sind ein paar Tipps, damit du nicht den ganzen Nachmittag am Schreibtisch verbringen musst:  
 
 *1. Schritt*: Sofort die Hausaufgaben notieren  
 

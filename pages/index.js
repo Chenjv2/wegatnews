@@ -56,8 +56,8 @@ export default function Blog({ newestPosts, archivePosts }) {
             Einfach per Teams oder E-Mail an Vincent Cui.
           </p>
           <p>
-            Wir treffen uns jeden Donnerstag in der Mittagspausen vor den
-            Computeräumen.
+            Wir treffen uns jeden Donnerstag in der Mittagspause vor den
+            Computerräumen.
           </p>
           <p>Komm doch einfach mal vorbei!</p>
         </div>

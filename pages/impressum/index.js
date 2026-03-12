@@ -30,8 +30,8 @@ export default function InformativIndex() {
           <b>Idee:</b> Ouijdan Hussein (Gymnasium zum Altenforst, Klasse 10b)
         </p>
         <p>
-          Diese Webseite wurde mithilfe React und Next.js erstellt. Die
-          Redaktion wird ausschließlich von Schüler*innnen geführt und ist
+          Diese Webseite wurde mithilfe von React und Next.js erstellt. Die
+          Redaktion wird ausschließlich von Schüler*innen geführt und ist
           unabhängig von der Schule.
         </p>
         <p>
@@ -59,7 +59,7 @@ export default function InformativIndex() {
         <p>
           Wir erheben und speichern keine personenbezogenen Daten, da wir eine
           statische Website betreiben. Auch betreiben wir keine
-          personenbezogenen Werbung mithilfe von Cookies.
+          personenbezogene Werbung mithilfe von Cookies.
         </p>
       </section>
     </main>

@@ -42,4 +42,4 @@ Unsere Eltern sagen ja immer: “Sei doch weniger am Handy, geh doch mit deinen 
 
 -Geht irgendwo was essen 
 
-Bitte werdet nicht kriminell und nutzt ChatGPT dafür, euch gegen eure Langweile zu helfen und nicht, um eure Hausaufgaben für Deutsch in letzter Sekunde zu machen. Viel Spaß mit euren Freunden! 
+Bitte werdet nicht kriminell und nutzt ChatGPT dafür, euch gegen eure Langeweile zu helfen und nicht, um eure Hausaufgaben für Deutsch in letzter Sekunde zu machen. Viel Spaß mit euren Freunden! 
