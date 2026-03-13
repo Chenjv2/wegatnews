@@ -38,7 +38,7 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
 
         {/* SEO / Social sharing */}
-        <meta property="og:title" content="Dein Seitenname" />
+        <meta property="og:title" content="WE G(A)T NEWS" />
         <meta
           property="og:description"
           content="Unabhängiger Blog für Information, Meinung und Umfragen"

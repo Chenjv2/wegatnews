@@ -45,7 +45,11 @@ export default function InformativIndex() {
         </p>
         <h2>Anschrift der Schule</h2>
         <p> Städtisches Gymnasium Zum Altenforst Troisdorf</p>
+        <a href="https://www.altenforst.de/" target="_blank" rel="noopener noreferrer">
+        Website der Schule
+        </a>
         <p>Zum Altenforst 10 53840 Troisdorf </p>
+        
 
         <h2>Bilder auf dieser Seite/Copyright</h2>
         <p>

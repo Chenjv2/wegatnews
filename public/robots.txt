@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://wegatenews.de
+Host: https://wegatnews.de
 
 # Sitemaps
-Sitemap: https://wegatenews.de/sitemap.xml
+Sitemap: https://wegatnews.de/sitemap.xml

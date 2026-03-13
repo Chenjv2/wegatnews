@@ -5,7 +5,7 @@ const posts = getAllPosts(); // fetch all posts
 
 /** next-sitemap.config.js */
 module.exports = {
-  siteUrl: 'https://wegatenews.de', // replace with your actual domain
+  siteUrl: 'https://wegatnews.de', // replace with your actual domain
   generateRobotsTxt: true,           // optional, generates robots.txt
   changefreq: 'daily',
   priority: 0.7,
