@@ -22,6 +22,7 @@ export default function App({ Component, pageProps }) {
           WE G(A)T NEWS, die unabhängige Schülerzeitung des Gymnasiums zum
           Altenforst
         </title>
+        
         <meta
           name="description"
           content="Unabhängiger Blog für Information, Meinung und Umfragen am Gymnasium zum Altenforst Troisdorf. Hier ist die Stimme der Schüler*innen!"
@@ -44,6 +45,7 @@ export default function App({ Component, pageProps }) {
           content="Unabhängiger Blog für Information, Meinung und Umfragen"
         />
         <meta property="og:type" content="website" />
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="2887ff34-c251-4b42-b710-7c2e064c633a"></script>
       </Head>
 
       <header>
