@@ -22,6 +22,7 @@ export default function App({ Component, pageProps }) {
           WE G(A)T NEWS – Die Schülerzeitung am Altenforst
         </title>
         
+        
         <meta
           name="description"
           content="Unabhängiger Blog für Information, Meinung und Umfragen am Gymnasium zum Altenforst Troisdorf. Hier ist die Stimme der Schüler*innen!"
