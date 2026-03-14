@@ -19,8 +19,7 @@ export default function App({ Component, pageProps }) {
       {/* GLOBAL HEAD (applies to all pages) */}
       <Head>
         <title>
-          WE G(A)T NEWS, die unabhängige Schülerzeitung des Gymnasiums zum
-          Altenforst
+          WE G(A)T NEWS – Die Schülerzeitung am Altenforst
         </title>
         
         <meta
