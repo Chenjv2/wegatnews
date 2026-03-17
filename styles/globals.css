@@ -233,6 +233,12 @@ nav ul li a:hover {
     display: block;
 }
 /* Blog Section */
+
+.welcome-container {
+    text-align: center;
+    padding: 40px 20px;
+}
+
 .blog-section {
     text-align: left;
     display: block;
