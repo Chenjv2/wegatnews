@@ -9,9 +9,14 @@ export default function InformativIndex() {
           Altenforst, Klasse 10b), ggf. Yongcheng Chen (Vater von Vincent Cui)
         </p>
         <p>
+          <b>Idee:</b> Ouijdan Hussein (Gymnasium zum Altenforst, Klasse 10b)
+        </p>
+        <p>
+          <b>Inhalt und Artikel:</b> Ouijdan Hussein (Gymnasium zum Altenforst, Klasse 10b)
+        </p>
+        <p>
           <b>
-            Website, Design, Programmierung, Debugging, Sicherheit,
-            Internetadresse, Suchmaschinenranking:
+            Website/Design:
           </b>{" "}
           Vincent Cui (Gymnasium zum Altenforst, Klasse 10b)
         </p>
@@ -19,16 +24,7 @@ export default function InformativIndex() {
           <b>Rechtliches, Datenschutz, Copyright:</b> Vincent Cui (Gymnasium zum
           Altenforst, Klasse 10b)
         </p>
-        <p>
-          <b>Beziehungen mit anderen Zeitungen, zum Beispiel Münster:</b> Vincent
-          Cui (Gymnasium zum Altenforst, Klasse 10b)
-        </p>
-        <p>
-          <b>Werbung:</b> Philipp Borsch (Gymnasium zum Altenforst, Klasse 10b)
-        </p>
-        <p>
-          <b>Idee:</b> Ouijdan Hussein (Gymnasium zum Altenforst, Klasse 10b)
-        </p>
+        
         <p>
           Diese Webseite wurde mithilfe von React und Next.js erstellt. Die
           Redaktion wird ausschließlich von Schüler*innen geführt und ist
@@ -38,11 +34,9 @@ export default function InformativIndex() {
           <b>Email:</b> vincent.cui@altenforst.de
         </p>
         <p>
-          <b>Email:</b> philipp.borsch@altenforst.de
-        </p>
-        <p>
           <b>Email:</b> ouijdan.hussein@altenforst.de
         </p>
+        
         <h2>Anschrift der Schule</h2>
         <p> Städtisches Gymnasium Zum Altenforst Troisdorf</p>
         <a href="https://www.altenforst.de/" target="_blank" rel="noopener noreferrer">
