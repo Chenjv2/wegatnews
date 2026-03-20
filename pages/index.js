@@ -26,7 +26,7 @@ function DisplayContainer({ data }) {
           </div>
 
           <Link href={`/blog/${post.slug}`}>Weiterlesen</Link>
-        </div>
+        </div> 
       ))}
     </div>
   );
