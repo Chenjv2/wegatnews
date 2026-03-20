@@ -1,6 +1,6 @@
 ---
 title: "Wenn das Toilettenmonster wieder zuschlägt..."
-date: "2019-01-01"
+date: "2025-12-03"
 author: "Ouijdan, 10.Klasse"
 author-full-name: "Ouijdan Hussein 10b"
 image: "/article-images/9.webp"

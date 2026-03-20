@@ -1,6 +1,6 @@
 ---
 title: "Umgangssprachliche Äußerungen erklärt: 67"
-date: "2015-01-01"
+date: "2025-12-01"
 author: "Ouijdan, 10.Klasse"
 author-full-name: "Ouijdan Hussein 10b"
 image: "/article-images/5.webp"

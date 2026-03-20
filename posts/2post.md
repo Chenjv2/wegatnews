@@ -1,6 +1,6 @@
 ---
 title: 5 Fakten über das Jahr 2025
-date: "2025-01-01"
+date: "2025-12-02"
 author: "Ouijdan, 10.Klasse"
 author-full-name: "Ouijdan Hussein 10b"
 image: "/article-images/2.webp"

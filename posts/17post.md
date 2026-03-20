@@ -1,12 +1,12 @@
 ---
-title: "Freizeit vs. Hausaufgaben – Wie man die super Balance im Alltag findet"
+title: "Freizeit vs. Hausaufgaben – Wie man die Balance findet"
 date: "2026-02-05"
 author: "Ouijdan, 10.Klasse"
 author-full-name: "Ouijdan Hussein 10b"
 image: "/article-images/17.webp"
 image_source: "https://unsplash.com/de/fotos/eine-person-die-mit-einem-stift-auf-ein-notizbuch-schreibt-O04ybN0h1C8"
 tags: Informativ
-preview: "Wer kennt es nicht? Den inneren, nervenzerreißenden Kampf mit sich selbst, wenn es dazu kommt Hausaufgaben zu machen. Hier sind ein paar Tipps die helfen könnten."
+preview: "Wer kennt es nicht? Den inneren, nervenzerreißenden Kampf mit sich selbst, wenn es dazu kommt Hausaufgaben zu machen"
 ---
 
 

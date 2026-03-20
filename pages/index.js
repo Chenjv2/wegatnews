@@ -6,8 +6,8 @@ export async function getStaticProps() {
 
   return {
     props: {
-      newestPosts: posts.slice(0, 8),
-      archivePosts: posts.slice(8),
+      newestPosts: posts.slice(0, 16),
+      archivePosts: posts.slice(16),
     },
   };
 }
@@ -36,7 +36,9 @@ function NewestPosts({ posts }) {
   return (
     <section className="blog-section">
       <DisplayContainer data={posts.slice(0, 4)} />
-      <DisplayContainer data={posts.slice(4)} />
+      <DisplayContainer data={posts.slice(4, 8)} />
+      <DisplayContainer data={posts.slice(8, 12)} />
+      <DisplayContainer data={posts.slice(12, 16)} />
     </section>
   );
 }

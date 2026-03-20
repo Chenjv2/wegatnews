@@ -1,12 +1,12 @@
 ---
 title: "Social Media: Ist es wirklich so eine Gefahr?" 
-date: "2013-07-01"
+date: "2025-12-07"
 author: "Sophie, 9.Klasse"
 author-full-name: "Sophie Soika 9d"
 image: "/article-images/7.webp"
 image_source: "https://unsplash.com/de/fotos/eine-gruppe-verschiedener-social-media-logos-HBkpnDVc_Ic"
 tags: Informativ
-preview: "Wir kennen es doch wirklich alle. Schule ist zuende, wir kommen zuhause an und uns ist direkt langweilig. Und was machen wir dann? Richtig, wir gehen auf Social Media. Entweder TikTok, Instagram oder YouTube... Aber ist das wirklich so eine gute Idee?"
+preview: "Wir kennen es doch wirklich alle. Schule ist zuende, wir kommen zuhause an und uns ist direkt langweilig"
 ---
 
 Wir kennen es doch wirklich alle. Schule ist zuende, wir kommen zuhause an und uns ist direkt langweilig. Und was machen wir dann? Richtig, wir gehen auf Social Media. Entweder TikTok, Instagram oder YouTube... Aber ist das wirklich so eine gute Idee? 

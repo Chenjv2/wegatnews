@@ -1,6 +1,6 @@
 ---
 title: Vielfältig - Voll - Vorbei - Das Jahr 2025
-date: "2026-01-14"
+date: "2025-12-14"
 author: "Ouijdan, 10.Klasse"
 author-full-name: "Ouijdan Hussein 10b"
 image: "/article-images/11.webp"
