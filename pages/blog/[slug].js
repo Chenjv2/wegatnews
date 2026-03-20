@@ -6,7 +6,7 @@ export default function Post({ post }) {
   return (
     <>
       <Head>
-        <title>{post.title} | Dein Seitenname</title>
+        <title>{post.title} | WE GAT NEWS</title>
 
         <meta
           name="description"
