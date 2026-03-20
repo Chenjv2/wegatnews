@@ -75,10 +75,18 @@ a:hover {
     max-width: 700px;
     border-radius: 10px;
 }
-.post-title{
+.post-title {
     font: var(--h1);
     margin-bottom: 10px;
-    line-height: normal;
+    line-height: 1.25;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+
+    overflow: hidden;
 }
 .post-content {
     width: 100%;

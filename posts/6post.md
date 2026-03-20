@@ -1,5 +1,5 @@
 ---
-title: Schüler frieren in den Pausen - Lehrer genießen drinnen die Wärme 
+title: Schüler frieren in der Pause – Lehrer bleiben im Warmen 
 date: "2025-12-06"
 author: "Philipp, 10.Klasse"
 author-full-name: "Philipp Borsch 10b"
