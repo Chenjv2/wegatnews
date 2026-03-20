@@ -1,4 +1,4 @@
----
+--- 
 title: "Organisieren leicht gemacht" 
 date: "2026-03-20"
 author: "Nori, 9,Klasse"
