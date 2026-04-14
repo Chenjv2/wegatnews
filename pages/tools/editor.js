@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import TurndownService from "turndown";
 
 export default function EditorPage() {
-
   const editorRef = useRef(null);
   const today = new Date().toISOString().split("T")[0];
 
@@ -13,6 +12,8 @@ export default function EditorPage() {
   const [slug, setSlug] = useState("");
   const [date, setDate] = useState(today);
   const [author, setAuthor] = useState("");
+
+  const [imageSource, setImageSource] = useState("");
 
   const [preview, setPreview] = useState("");
 
@@ -67,6 +68,7 @@ export default function EditorPage() {
 
   const addTag = () => {
     const cleaned = tagInput.trim().toLowerCase();
+
     if (!cleaned) return;
 
     if (tags.includes(cleaned)) {
@@ -79,15 +81,12 @@ export default function EditorPage() {
   };
 
   const removeTag = (tagToRemove) => {
-
     const nextTags = tags.filter((tag) => tag !== tagToRemove);
 
     setTags(nextTags.length ? nextTags : ["informativ"]);
-
   };
 
   const handleTagKeyDown = (e) => {
-
     if (e.key === "Enter" || e.key === ",") {
       e.preventDefault();
       addTag();
@@ -96,48 +95,58 @@ export default function EditorPage() {
     if (e.key === "Backspace" && !tagInput && tags.length > 1) {
       setTags((prev) => prev.slice(0, -1));
     }
-
   };
-
+  const yamlString = (value) => {
+    if (value === undefined || value === null) return '""';
+    return `"${String(value).replace(/"/g, '\\"')}"`;
+  };
   const buildMarkdown = () => {
-
     const turndownService = new TurndownService({
       headingStyle: "atx",
       codeBlockStyle: "fenced",
-      bulletListMarker: "-"
+      bulletListMarker: "-",
     });
 
     const contentMarkdown = turndownService.turndown(contentHtml);
 
     return [
-
       "---",
-      `title: ${title}`,
-      `articleNumber: ${articleNumber}`,
-      `slug: ${slug}`,
-      `date: ${date}`,
-      `author: ${author}`,
-      `preview: ${preview}`,
-      `tags: [${tags.map(tag => `"${tag}"`).join(", ")}]`,
+      `title: ${yamlString(title)}`,
+      `articleNumber: ${yamlString(articleNumber)}`,
+      `slug: ${yamlString(slug)}`,
+      `date: ${yamlString(date)}`,
+      `author: ${yamlString(author)}`,
+      `image_source: ${yamlString(imageSource)}`,
+      `preview: ${yamlString(preview)}`,
+      `tags: [${tags.map((tag) => yamlString(tag)).join(", ")}]`,
       "---",
       "",
-      contentMarkdown
-
+      contentMarkdown,
     ].join("\n");
-
   };
 
   useEffect(() => {
     setMarkdown(buildMarkdown());
-  }, [title, articleNumber, slug, date, author, preview, tags, contentHtml]);
+  }, [
+    title,
+    articleNumber,
+    slug,
+    date,
+    author,
+    imageSource,
+    preview,
+    tags,
+    contentHtml,
+  ]);
 
   const downloadMarkdown = () => {
-
     if (!isValidPost) return;
 
     const md = buildMarkdown();
 
-    const blob = new Blob([md], { type: "text/markdown;charset=utf-8" });
+    const blob = new Blob([md], {
+      type: "text/markdown;charset=utf-8",
+    });
 
     const url = URL.createObjectURL(blob);
 
@@ -151,15 +160,12 @@ export default function EditorPage() {
     a.remove();
 
     URL.revokeObjectURL(url);
-
   };
 
   return (
     <div style={styles.page}>
-
       <div style={styles.headerRow}>
-
-        <h1 style={{margin:0}}>Blog Post Editor</h1>
+        <h1 style={{ margin: 0 }}>Blog Post Editor</h1>
 
         <button
           onClick={() => setAdvancedOpen(!advancedOpen)}
@@ -167,7 +173,6 @@ export default function EditorPage() {
         >
           {advancedOpen ? "Advanced schließen" : "Advanced"}
         </button>
-
       </div>
 
       <input
@@ -177,13 +182,11 @@ export default function EditorPage() {
         onChange={(e) => setTitle(e.target.value)}
         style={{
           ...styles.input,
-          ...(titleTooLong ? styles.inputError : {})
+          ...(titleTooLong ? styles.inputError : {}),
         }}
       />
 
-      <div style={styles.charCount}>
-        {title.length}/70
-      </div>
+      <div style={styles.charCount}>{title.length}/70</div>
 
       <input
         type="text"
@@ -208,6 +211,14 @@ export default function EditorPage() {
         style={styles.input}
       />
 
+      <input
+        type="text"
+        placeholder="Bild Link (image_source)"
+        value={imageSource}
+        onChange={(e) => setImageSource(e.target.value)}
+        style={styles.input}
+      />
+
       <textarea
         rows={2}
         placeholder="Preview (max 120 Zeichen)"
@@ -215,31 +226,21 @@ export default function EditorPage() {
         onChange={(e) => setPreview(e.target.value)}
         style={{
           ...styles.textarea,
-          ...(previewTooLong ? styles.inputError : {})
+          ...(previewTooLong ? styles.inputError : {}),
         }}
       />
 
-      <div style={styles.charCount}>
-        {preview.length}/120
-      </div>
+      <div style={styles.charCount}>{preview.length}/120</div>
 
       <div style={styles.tagsBox}>
-
-        {tags.map(tag => (
-
+        {tags.map((tag) => (
           <span key={tag} style={styles.tagChip}>
-
             {tag}
 
-            <button
-              onClick={() => removeTag(tag)}
-              style={styles.tagRemove}
-            >
+            <button onClick={() => removeTag(tag)} style={styles.tagRemove}>
               ×
             </button>
-
           </span>
-
         ))}
 
         <input
@@ -250,24 +251,23 @@ export default function EditorPage() {
           placeholder="Tag"
           style={styles.tagInput}
         />
-
       </div>
 
       {advancedOpen && (
         <input
           value={slug}
           readOnly
-          style={{...styles.input, ...styles.readOnly}}
+          style={{ ...styles.input, ...styles.readOnly }}
         />
       )}
 
       <div style={styles.toolbar}>
-
         <button onClick={() => formatText("bold")}>Fett</button>
         <button onClick={() => formatText("italic")}>Kursiv</button>
         <button onClick={() => formatText("insertUnorderedList")}>Liste</button>
-        <button onClick={() => formatText("insertOrderedList")}>Nummeriert</button>
-
+        <button onClick={() => formatText("insertOrderedList")}>
+          Nummeriert
+        </button>
       </div>
 
       <div
@@ -279,9 +279,7 @@ export default function EditorPage() {
       />
 
       {!isValidPost && (
-        <div style={styles.errorBox}>
-          Download gesperrt — Felder prüfen
-        </div>
+        <div style={styles.errorBox}>Download gesperrt — Felder prüfen</div>
       )}
 
       <button
@@ -289,7 +287,7 @@ export default function EditorPage() {
         disabled={!isValidPost}
         style={{
           ...styles.downloadButton,
-          ...(!isValidPost ? styles.disabledButton : {})
+          ...(!isValidPost ? styles.disabledButton : {}),
         }}
       >
         Markdown herunterladen
@@ -301,138 +299,135 @@ export default function EditorPage() {
           <pre style={styles.previewBox}>{markdown}</pre>
         </>
       )}
-
     </div>
   );
 }
 
 const styles = {
-
-  page:{
-    maxWidth:"900px",
-    margin:"40px auto",
-    fontFamily:"Arial"
+  page: {
+    maxWidth: "900px",
+    margin: "40px auto",
+    fontFamily: "Arial",
   },
 
-  headerRow:{
-    display:"flex",
-    justifyContent:"space-between",
-    alignItems:"center",
-    marginBottom:"20px"
+  headerRow: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: "20px",
   },
 
-  advancedToggle:{
-    padding:"8px 12px",
-    borderRadius:"6px",
-    border:"1px solid #ccc",
-    cursor:"pointer",
-    background:"#fafafa"
+  advancedToggle: {
+    padding: "8px 12px",
+    borderRadius: "6px",
+    border: "1px solid #ccc",
+    cursor: "pointer",
+    background: "#fafafa",
   },
 
-  input:{
-    width:"100%",
-    padding:"12px",
-    borderRadius:"6px",
-    border:"1px solid #ccc",
-    marginBottom:"6px"
+  input: {
+    width: "100%",
+    padding: "12px",
+    borderRadius: "6px",
+    border: "1px solid #ccc",
+    marginBottom: "6px",
   },
 
-  textarea:{
-    width:"100%",
-    padding:"12px",
-    borderRadius:"6px",
-    border:"1px solid #ccc",
-    marginBottom:"6px",
-    resize:"vertical"
+  textarea: {
+    width: "100%",
+    padding: "12px",
+    borderRadius: "6px",
+    border: "1px solid #ccc",
+    marginBottom: "6px",
+    resize: "vertical",
   },
 
-  readOnly:{
-    background:"#f5f5f5",
-    color:"#666"
+  readOnly: {
+    background: "#f5f5f5",
+    color: "#666",
   },
 
-  inputError:{
-    border:"1px solid red"
+  inputError: {
+    border: "1px solid red",
   },
 
-  charCount:{
-    fontSize:"12px",
-    textAlign:"right",
-    marginBottom:"12px"
+  charCount: {
+    fontSize: "12px",
+    textAlign: "right",
+    marginBottom: "12px",
   },
 
-  tagsBox:{
-    border:"1px solid #ccc",
-    borderRadius:"6px",
-    padding:"8px",
-    display:"flex",
-    flexWrap:"wrap",
-    gap:"8px",
-    marginBottom:"14px"
+  tagsBox: {
+    border: "1px solid #ccc",
+    borderRadius: "6px",
+    padding: "8px",
+    display: "flex",
+    flexWrap: "wrap",
+    gap: "8px",
+    marginBottom: "14px",
   },
 
-  tagChip:{
-    background:"#eee",
-    borderRadius:"999px",
-    padding:"6px 10px",
-    display:"flex",
-    alignItems:"center",
-    gap:"6px"
+  tagChip: {
+    background: "#eee",
+    borderRadius: "999px",
+    padding: "6px 10px",
+    display: "flex",
+    alignItems: "center",
+    gap: "6px",
   },
 
-  tagRemove:{
-    border:"none",
-    background:"transparent",
-    cursor:"pointer"
+  tagRemove: {
+    border: "none",
+    background: "transparent",
+    cursor: "pointer",
   },
 
-  tagInput:{
-    border:"none",
-    outline:"none",
-    flex:1
+  tagInput: {
+    border: "none",
+    outline: "none",
+    flex: 1,
   },
 
-  toolbar:{
-    display:"flex",
-    gap:"10px",
-    marginBottom:"12px"
+  toolbar: {
+    display: "flex",
+    gap: "10px",
+    marginBottom: "12px",
   },
 
-  editor:{
-    height:"400px",
-    overflowY:"auto",
-    border:"1px solid #ccc",
-    borderRadius:"6px",
-    padding:"15px",
-    marginBottom:"20px"
+  editor: {
+    height: "400px",
+    overflowY: "auto",
+    border: "1px solid #ccc",
+    borderRadius: "6px",
+    padding: "15px",
+    marginBottom: "20px",
   },
 
-  errorBox:{
-    background:"#fff3f3",
-    border:"1px solid red",
-    padding:"10px",
-    borderRadius:"6px",
-    marginBottom:"10px",
-    color:"red"
+  errorBox: {
+    background: "#fff3f3",
+    border: "1px solid red",
+    padding: "10px",
+    borderRadius: "6px",
+    marginBottom: "10px",
+    color: "red",
   },
 
-  downloadButton:{
-    padding:"10px 16px",
-    borderRadius:"6px",
-    border:"1px solid #ccc",
-    cursor:"pointer"
+  downloadButton: {
+    padding: "10px 16px",
+    borderRadius: "6px",
+    border: "1px solid #ccc",
+    cursor: "pointer",
   },
 
-  disabledButton:{
-    opacity:0.5,
-    cursor:"not-allowed"
+  disabledButton: {
+    opacity: 0.5,
+    cursor: "not-allowed",
   },
 
-  previewBox:{
-    background:"#f7f7f7",
-    padding:"15px",
-    borderRadius:"6px",
-    border:"1px solid #ddd"
-  }
-
+  previewBox: {
+    background: "#f7f7f7",
+    padding: "15px",
+    borderRadius: "6px",
+    border: "1px solid #ddd",
+  },
 };
