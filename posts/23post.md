@@ -12,6 +12,6 @@ Laut der SV soll ab Mittwoch eine Pilotphase zur Handyregelung starten. Die Hand
 
 Die Schule will testen, ob das Konzept funktioniert, bei zu vielen Verstößen sollen nämlich die Handtaschen eingeführt werden. Hintergrund ist auch, das bestimmte Schüler*innen bei der Abnahme ihre Handys aggressiv reagiert hatten. Daher appellieren wir, die Handys geschlossen im Ranzen zu lassen (oder zu mindestens die Emotionen zu kontrollieren).  
 
-Ein ausführlicher Artikel zu den Handytaschen folgt, diese Eilmeldung bedeutet nicht, dass die Redaktion die Handyreglung unterstützt. 
+Ein ausführlicher Artikel zu den Handytaschen folgt, diese Eilmeldung bedeutet nicht, dass die Redaktion die Handyregelung unterstützt. 
 
 (Stand: Di, 14.04 14:04)  
