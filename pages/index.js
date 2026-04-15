@@ -1,5 +1,6 @@
-import Link from "next/link";
 import { getAllPosts } from "../lib/posts";
+import PostGrid from "../components/blog/PostGrid";
+import ArchiveList from "../components/blog/ArchiveList";
 
 export async function getStaticProps() {
   const posts = getAllPosts();
@@ -12,33 +13,22 @@ export async function getStaticProps() {
   };
 }
 
-function DisplayContainer({ data }) {
-  return (
-    <div className="blog-container">
-      {data.map((post) => (
-        <div key={post.slug} className="blog-entry">
-          <img src={post.image} alt="blog-foto" />
-          <h3>{post.title}</h3>
-          <p>{post.preview}...</p>
+function chunkPosts(posts, size) {
+  const chunks = [];
 
-          <div className="meta">
-            {post.date} · {post.author}
-          </div>
+  for (let index = 0; index < posts.length; index += size) {
+    chunks.push(posts.slice(index, index + size));
+  }
 
-          <Link href={`/blog/${post.slug}`}>Weiterlesen</Link>
-        </div> 
-      ))}
-    </div>
-  );
+  return chunks;
 }
 
 function NewestPosts({ posts }) {
   return (
     <section className="blog-section">
-      <DisplayContainer data={posts.slice(0, 4)} />
-      <DisplayContainer data={posts.slice(4, 8)} />
-      <DisplayContainer data={posts.slice(8, 12)} />
-      <DisplayContainer data={posts.slice(12, 16)} />
+      {chunkPosts(posts, 4).map((group, index) => (
+        <PostGrid key={index} posts={group} />
+      ))}
     </section>
   );
 }
@@ -46,26 +36,22 @@ function NewestPosts({ posts }) {
 export default function Blog({ newestPosts, archivePosts }) {
   return (
     <>
-      {/* Welcome text */}
       <div className="welcome-container">
         <h2 className="welcome">
           Willkommen auf wegatnews, der digitalen Schülerzeitung am Altenforst.
         </h2>
       </div>
 
-      {/* Newest blog posts */}
       <NewestPosts posts={newestPosts} />
 
-      {/* Contact section */}
       <section>
         <div className="image-or-text">
           <h2>Ideen, Artikel, Probleme, Fragen?</h2>
           <p>
-            Einfach per Teams oder E-Mail an Vincent Cui (Technik), oder an Ouijdan Hussein (Inhalt)
+            Einfach per Teams oder E-Mail an Vincent Cui (Technik), oder an
+            Ouijdan Hussein (Inhalt)
           </p>
-          <p>
-            vincent.cui@altenforst.de, ouijdan.hussein@altenforst.de
-          </p>
+          <p>vincent.cui@altenforst.de, ouijdan.hussein@altenforst.de</p>
           <p>
             Wir treffen uns jeden Donnerstag in der Mittagspause vor den
             Computerräumen.
@@ -74,17 +60,11 @@ export default function Blog({ newestPosts, archivePosts }) {
         </div>
       </section>
 
-      {/* Archive */}
       <section>
         <h1 className="archiv">Archiv</h1>
-        <ul className="archiv">
-          {archivePosts.map((post) => (
-            <li key={post.slug}>
-              <Link href={`/blog/${post.slug}`}>{post.title}</Link> {post.date}
-            </li>
-          ))}
-        </ul>
+        <ArchiveList posts={archivePosts} />
       </section>
     </>
   );
 }
+

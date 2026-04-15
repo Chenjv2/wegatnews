@@ -1,41 +1,18 @@
-import { getAllPosts, getPostBySlug } from "../../lib/posts";
 import Link from "next/link";
-import Head from "next/head";
+import { getAllPostSlugs, getPostBySlug } from "../../lib/posts";
+import PostHead from "../../components/seo/PostHead";
 
 export default function Post({ post }) {
   return (
     <>
-      <Head>
-        <title>{post.title} | WE GAT NEWS</title>
-
-        <meta
-          name="description"
-          content={post.preview || post.title}
-        />
-
-        {/* Open Graph / Social */}
-        <meta property="og:title" content={post.title} />
-        <meta
-          property="og:description"
-          content={post.preview || post.title}
-        />
-        <meta property="og:type" content="article" />
-
-        {post.image && (
-          <meta property="og:image" content={post.image} />
-        )}
-      </Head>
+      <PostHead post={post} />
 
       <article className="post">
         <div className="post-container">
           <div className="image-or-text">
-            {post.image && (
-              <img
-                src={post.image}
-                alt={post.title}
-                className="post-image"
-              />
-            )}
+            {post.image ? (
+              <img src={post.image} alt={post.title} className="post-image" />
+            ) : null}
           </div>
 
           <div className="image-or-text">
@@ -47,9 +24,10 @@ export default function Post({ post }) {
           </div>
         </div>
 
-        <p>{post.author}</p>
-        <small>Bildquelle: {post.image_source}</small>
-        <p></p>
+        <div className="post-meta-block">
+          <p>{post.author}</p>
+          <small>Bildquelle: {post.image_source}</small>
+        </div>
 
         <Link href="/">Zurück zur Homepage</Link>
       </article>
@@ -58,11 +36,11 @@ export default function Post({ post }) {
 }
 
 export async function getStaticPaths() {
-  const posts = getAllPosts();
+  const slugs = getAllPostSlugs();
 
   return {
-    paths: posts.map((post) => ({
-      params: { slug: post.slug },
+    paths: slugs.map((slug) => ({
+      params: { slug },
     })),
     fallback: false,
   };
@@ -75,3 +53,4 @@ export async function getStaticProps({ params }) {
     props: { post },
   };
 }
+

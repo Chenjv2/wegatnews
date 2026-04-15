@@ -1,25 +1,40 @@
 import { useEffect, useRef, useState } from "react";
 import TurndownService from "turndown";
+import ToolsLayout from "../../components/layout/ToolsLayout";
+
+function yamlString(value) {
+  if (value === undefined || value === null) return '""';
+  return `"${String(value).replace(/"/g, '\\"')}"`;
+}
+
+function createSlug(value) {
+  return value
+    .toLowerCase()
+    .trim()
+    .replace(/ä/g, "ae")
+    .replace(/ö/g, "oe")
+    .replace(/ü/g, "ue")
+    .replace(/ß/g, "ss")
+    .replace(/[^a-z0-9\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
+}
 
 export default function EditorPage() {
   const editorRef = useRef(null);
   const today = new Date().toISOString().split("T")[0];
 
   const [advancedOpen, setAdvancedOpen] = useState(false);
-
   const [title, setTitle] = useState("");
   const [articleNumber, setArticleNumber] = useState("");
   const [slug, setSlug] = useState("");
   const [date, setDate] = useState(today);
   const [author, setAuthor] = useState("");
-
   const [imageSource, setImageSource] = useState("");
-
   const [preview, setPreview] = useState("");
-
   const [tagInput, setTagInput] = useState("");
   const [tags, setTags] = useState(["informativ"]);
-
   const [contentHtml, setContentHtml] = useState("");
   const [markdown, setMarkdown] = useState("");
 
@@ -48,20 +63,6 @@ export default function EditorPage() {
     setContentHtml(editorRef.current?.innerHTML || "");
   };
 
-  const createSlug = (value) => {
-    return value
-      .toLowerCase()
-      .trim()
-      .replace(/ä/g, "ae")
-      .replace(/ö/g, "oe")
-      .replace(/ü/g, "ue")
-      .replace(/ß/g, "ss")
-      .replace(/[^a-z0-9\s-]/g, "")
-      .replace(/\s+/g, "-")
-      .replace(/-+/g, "-")
-      .replace(/^-|-$/g, "");
-  };
-
   useEffect(() => {
     setSlug(createSlug(title));
   }, [title]);
@@ -82,24 +83,20 @@ export default function EditorPage() {
 
   const removeTag = (tagToRemove) => {
     const nextTags = tags.filter((tag) => tag !== tagToRemove);
-
     setTags(nextTags.length ? nextTags : ["informativ"]);
   };
 
-  const handleTagKeyDown = (e) => {
-    if (e.key === "Enter" || e.key === ",") {
-      e.preventDefault();
+  const handleTagKeyDown = (event) => {
+    if (event.key === "Enter" || event.key === ",") {
+      event.preventDefault();
       addTag();
     }
 
-    if (e.key === "Backspace" && !tagInput && tags.length > 1) {
+    if (event.key === "Backspace" && !tagInput && tags.length > 1) {
       setTags((prev) => prev.slice(0, -1));
     }
   };
-  const yamlString = (value) => {
-    if (value === undefined || value === null) return '""';
-    return `"${String(value).replace(/"/g, '\\"')}"`;
-  };
+
   const buildMarkdown = () => {
     const turndownService = new TurndownService({
       headingStyle: "atx",
@@ -143,33 +140,31 @@ export default function EditorPage() {
     if (!isValidPost) return;
 
     const md = buildMarkdown();
-
     const blob = new Blob([md], {
       type: "text/markdown;charset=utf-8",
     });
 
     const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
 
-    const a = document.createElement("a");
+    link.href = url;
+    link.download = `${articleNumber.trim()}.md`;
 
-    a.href = url;
-    a.download = `${articleNumber.trim()}.md`;
-
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
 
     URL.revokeObjectURL(url);
   };
 
   return (
-    <div style={styles.page}>
-      <div style={styles.headerRow}>
-        <h1 style={{ margin: 0 }}>Blog Post Editor</h1>
+    <div className="editor-page">
+      <div className="editor-header-row">
+        <h1 className="editor-heading">Blog Post Editor</h1>
 
         <button
-          onClick={() => setAdvancedOpen(!advancedOpen)}
-          style={styles.advancedToggle}
+          onClick={() => setAdvancedOpen((prev) => !prev)}
+          className="editor-advanced-toggle"
         >
           {advancedOpen ? "Advanced schließen" : "Advanced"}
         </button>
@@ -179,65 +174,58 @@ export default function EditorPage() {
         type="text"
         placeholder="Titel (max 70 Zeichen)"
         value={title}
-        onChange={(e) => setTitle(e.target.value)}
-        style={{
-          ...styles.input,
-          ...(titleTooLong ? styles.inputError : {}),
-        }}
+        onChange={(event) => setTitle(event.target.value)}
+        className={`editor-input ${titleTooLong ? "editor-input-error" : ""}`.trim()}
       />
 
-      <div style={styles.charCount}>{title.length}/70</div>
+      <div className="editor-char-count">{title.length}/70</div>
 
       <input
         type="text"
         placeholder="Artikelnummer (Dateiname)"
         value={articleNumber}
-        onChange={(e) => setArticleNumber(e.target.value)}
-        style={styles.input}
+        onChange={(event) => setArticleNumber(event.target.value)}
+        className="editor-input"
       />
 
       <input
         type="date"
         value={date}
-        onChange={(e) => setDate(e.target.value)}
-        style={styles.input}
+        onChange={(event) => setDate(event.target.value)}
+        className="editor-input"
       />
 
       <input
         type="text"
         placeholder="Author"
         value={author}
-        onChange={(e) => setAuthor(e.target.value)}
-        style={styles.input}
+        onChange={(event) => setAuthor(event.target.value)}
+        className="editor-input"
       />
 
       <input
         type="text"
         placeholder="Bild Link (image_source)"
         value={imageSource}
-        onChange={(e) => setImageSource(e.target.value)}
-        style={styles.input}
+        onChange={(event) => setImageSource(event.target.value)}
+        className="editor-input"
       />
 
       <textarea
         rows={2}
         placeholder="Preview (max 120 Zeichen)"
         value={preview}
-        onChange={(e) => setPreview(e.target.value)}
-        style={{
-          ...styles.textarea,
-          ...(previewTooLong ? styles.inputError : {}),
-        }}
+        onChange={(event) => setPreview(event.target.value)}
+        className={`editor-textarea ${previewTooLong ? "editor-input-error" : ""}`.trim()}
       />
 
-      <div style={styles.charCount}>{preview.length}/120</div>
+      <div className="editor-char-count">{preview.length}/120</div>
 
-      <div style={styles.tagsBox}>
+      <div className="editor-tags-box">
         {tags.map((tag) => (
-          <span key={tag} style={styles.tagChip}>
+          <span key={tag} className="editor-tag-chip">
             {tag}
-
-            <button onClick={() => removeTag(tag)} style={styles.tagRemove}>
+            <button onClick={() => removeTag(tag)} className="editor-tag-remove">
               ×
             </button>
           </span>
@@ -245,189 +233,59 @@ export default function EditorPage() {
 
         <input
           value={tagInput}
-          onChange={(e) => setTagInput(e.target.value)}
+          onChange={(event) => setTagInput(event.target.value)}
           onKeyDown={handleTagKeyDown}
           onBlur={addTag}
           placeholder="Tag"
-          style={styles.tagInput}
+          className="editor-tag-input"
         />
       </div>
 
-      {advancedOpen && (
-        <input
-          value={slug}
-          readOnly
-          style={{ ...styles.input, ...styles.readOnly }}
-        />
-      )}
+      {advancedOpen ? (
+        <input value={slug} readOnly className="editor-input editor-read-only" />
+      ) : null}
 
-      <div style={styles.toolbar}>
+      <div className="editor-toolbar">
         <button onClick={() => formatText("bold")}>Fett</button>
         <button onClick={() => formatText("italic")}>Kursiv</button>
         <button onClick={() => formatText("insertUnorderedList")}>Liste</button>
-        <button onClick={() => formatText("insertOrderedList")}>
-          Nummeriert
-        </button>
+        <button onClick={() => formatText("insertOrderedList")}>Nummeriert</button>
       </div>
 
       <div
         ref={editorRef}
         contentEditable
         suppressContentEditableWarning
-        onInput={(e) => setContentHtml(e.currentTarget.innerHTML)}
-        style={styles.editor}
+        onInput={(event) => setContentHtml(event.currentTarget.innerHTML)}
+        className="editor-content"
       />
 
-      {!isValidPost && (
-        <div style={styles.errorBox}>Download gesperrt — Felder prüfen</div>
-      )}
+      {!isValidPost ? (
+        <div className="editor-error-box">Download gesperrt — Felder prüfen</div>
+      ) : null}
 
       <button
         onClick={downloadMarkdown}
         disabled={!isValidPost}
-        style={{
-          ...styles.downloadButton,
-          ...(!isValidPost ? styles.disabledButton : {}),
-        }}
+        className={`editor-download-button ${!isValidPost ? "editor-disabled-button" : ""}`.trim()}
       >
         Markdown herunterladen
       </button>
 
-      {advancedOpen && (
+      {advancedOpen ? (
         <>
           <h2>Markdown Preview</h2>
-          <pre style={styles.previewBox}>{markdown}</pre>
+          <pre className="editor-preview-box">{markdown}</pre>
         </>
-      )}
+      ) : null}
     </div>
   );
 }
 
-const styles = {
-  page: {
-    maxWidth: "900px",
-    margin: "40px auto",
-    fontFamily: "Arial",
-  },
-
-  headerRow: {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    marginBottom: "20px",
-  },
-
-  advancedToggle: {
-    padding: "8px 12px",
-    borderRadius: "6px",
-    border: "1px solid #ccc",
-    cursor: "pointer",
-    background: "#fafafa",
-  },
-
-  input: {
-    width: "100%",
-    padding: "12px",
-    borderRadius: "6px",
-    border: "1px solid #ccc",
-    marginBottom: "6px",
-  },
-
-  textarea: {
-    width: "100%",
-    padding: "12px",
-    borderRadius: "6px",
-    border: "1px solid #ccc",
-    marginBottom: "6px",
-    resize: "vertical",
-  },
-
-  readOnly: {
-    background: "#f5f5f5",
-    color: "#666",
-  },
-
-  inputError: {
-    border: "1px solid red",
-  },
-
-  charCount: {
-    fontSize: "12px",
-    textAlign: "right",
-    marginBottom: "12px",
-  },
-
-  tagsBox: {
-    border: "1px solid #ccc",
-    borderRadius: "6px",
-    padding: "8px",
-    display: "flex",
-    flexWrap: "wrap",
-    gap: "8px",
-    marginBottom: "14px",
-  },
-
-  tagChip: {
-    background: "#eee",
-    borderRadius: "999px",
-    padding: "6px 10px",
-    display: "flex",
-    alignItems: "center",
-    gap: "6px",
-  },
-
-  tagRemove: {
-    border: "none",
-    background: "transparent",
-    cursor: "pointer",
-  },
-
-  tagInput: {
-    border: "none",
-    outline: "none",
-    flex: 1,
-  },
-
-  toolbar: {
-    display: "flex",
-    gap: "10px",
-    marginBottom: "12px",
-  },
-
-  editor: {
-    height: "400px",
-    overflowY: "auto",
-    border: "1px solid #ccc",
-    borderRadius: "6px",
-    padding: "15px",
-    marginBottom: "20px",
-  },
-
-  errorBox: {
-    background: "#fff3f3",
-    border: "1px solid red",
-    padding: "10px",
-    borderRadius: "6px",
-    marginBottom: "10px",
-    color: "red",
-  },
-
-  downloadButton: {
-    padding: "10px 16px",
-    borderRadius: "6px",
-    border: "1px solid #ccc",
-    cursor: "pointer",
-  },
-
-  disabledButton: {
-    opacity: 0.5,
-    cursor: "not-allowed",
-  },
-
-  previewBox: {
-    background: "#f7f7f7",
-    padding: "15px",
-    borderRadius: "6px",
-    border: "1px solid #ddd",
-  },
+EditorPage.getLayout = function getLayout(page) {
+  return (
+    <ToolsLayout title="Blog Post Editor">
+      {page}
+    </ToolsLayout>
+  );
 };

@@ -1,0 +1,138 @@
+header {
+  position: sticky;
+  top: 0;
+  max-height: 200px;
+  z-index: 1000;
+}
+
+nav {
+  background-color: var(--coloraccent);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  max-width: 500px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  right: 20px;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  font: var(--p);
+  border-radius: clamp(12px, 3vw, 24px);
+}
+
+nav ul li a:hover {
+  background-color: var(--coloraccent-hover);
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle div {
+  border-radius: 5px;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+.sidebar {
+  position: fixed;
+  top: 87.77px;
+  right: -250px;
+  width: 250px;
+  height: calc(100% - 53px);
+  background-color: var(--coloraccent);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: right 0.3s ease;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: var(--color1);
+  text-decoration: none;
+  font: var(--p);
+  padding: 10px;
+  display: flex;
+  padding-left: 20px;
+  border-radius: var(--button-border-radius);
+}
+
+footer {
+  background-color: var(--coloraccent);
+  padding: clamp(16px, 2vw, 28px);
+  text-align: center;
+  color: var(--color1);
+}
+
+footer a {
+  margin: 15px;
+  font: var(--p);
+  color: var(--color1);
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .sidebar {
+    width: 200px;
+    right: -200px;
+  }
+
+  nav ul {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 150px;
+    right: -150px;
+  }
+}
