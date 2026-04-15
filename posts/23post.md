@@ -24,4 +24,4 @@ Die Schule will testen, ob das Konzept funktioniert, bei zu vielen Verstößen s
 
 Ein ausführlicher Artikel zu den Handytaschen folgt, diese Eilmeldung bedeutet nicht, dass die Redaktion die Handyreglung unterstützt. 
 
-(Stand: Di, 14.04 14:04) *
+(Stand: Di, 14.04 14:04)*
