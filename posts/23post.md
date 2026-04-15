@@ -17,10 +17,11 @@ Diesen Ausagen haben aber einige Lehrer entschieden wiedersprochen. Laut ihnen s
 
 *Dieser Artikel erschien am Di, 13.04, auf Basis von SV Ausagen. Am Mittwoch, 14.04. um 9:05 wurde ausdrücklich von einem Lehrer gefordert, den Artikel runter zu nehmen, da dieser "Falschaussagen verebreitet". Urprünglich erschien der Artikel in dieser Form:*
 
-*Achtung! Neue Handyregelung ab Mittwoch, dem 15.04
-Die Schule will testen, ob das Konzept funktioniert, bei zu vielen Verstößen sollen nämlich die Handtaschen eingeführt werden. Hintergrund ist auch, das bestimmte Schüler*innen bei der Abnahme ihre Handys aggressiv reagiert hatten. Daher appellieren wir, die Handys geschlossen im Ranzen zu lassen (oder zu mindestens die Emotionen zu kontrollieren).*
+*Achtung! Neue Handyregelung ab Mittwoch, dem 15.04*
 
-*Die Schule will testen, ob das Konzept funktioniert, bei zu vielen Verstößen sollen nämlich die Handtaschen eingeführt werden. Hintergrund ist auch, das bestimmte Schüler*innen bei der Abnahme ihre Handys aggressiv reagiert hatten. Daher appellieren wir, die Handys geschlossen im Ranzen zu lassen (oder zu mindestens die Emotionen zu kontrollieren). *
+*Laut der SV soll ab Mittwoch eine Pilotphase zur Handyregelung starten. Die Handys sollen in der Schultasche ausgeschaltet bleiben. Wer mit einem Handy in der Hand erwischt wird, dessen Eltern müssen dann zur Schule kommen, um das Handy abzuholen.*
+
+*Die Schule will testen, ob das Konzept funktioniert, bei zu vielen Verstößen sollen nämlich die Handtaschen eingeführt werden. Hintergrund ist auch, das bestimmte Schüler*innen bei der Abnahme ihre Handys aggressiv reagiert hatten. Daher appellieren wir, die Handys geschlossen im Ranzen zu lassen (oder zu mindestens die Emotionen zu kontrollieren).*
 
 *Ein ausführlicher Artikel zu den Handytaschen folgt, diese Eilmeldung bedeutet nicht, dass die Redaktion die Handyreglung unterstützt.*
 
