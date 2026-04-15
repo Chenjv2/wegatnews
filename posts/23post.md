@@ -14,7 +14,7 @@ Laut der manchen SV Ausagen soll ab Mittwoch, 15.04 eine Pilotphase zur Handyreg
 
 Diesen Ausagen haben aber einige Lehrer entschieden wiedersprochen. Laut ihnen sei die Pilotphase erst in der Besprechung gewesen, und es sei noch nichts konkretes geplant. Zusätzlich wird ausdrücklich betont, das dies ein Vorhaben der SV sei, und die Schule dazu sich distanziert. 
 
-Insgesammt herscht also große Unklarheit. Wir als Redaktion hatten den Eindruck, dass in der SV etwas beschlossen wurde, ohne sich jedoch vorher mit der Schuleitung oder Lehrerschaft abzusprechen. Wir etnschuldigen uns, falls der Ursprüngliche Artikel für Verwirrung gesorgt hatte, aber wir denken, dass es noch verwirrender wäre, wenn der Artikel sprurlos runtergenommen wäre.
+Insgesammt herscht also große Unklarheit. Wir als Redaktion hatten den Eindruck, dass in der SV etwas beschlossen wurde, ohne sich jedoch vorher mit der Schuleitung oder Lehrerschaft abzusprechen. Wir entschuldigen uns, falls der Ursprüngliche Artikel für Verwirrung gesorgt hatte, aber wir denken, dass es noch verwirrender wäre, wenn der Artikel sprurlos runtergenommen wäre.
 
 *Dieser Artikel erschien am Di, 13.04, auf Basis von SV Ausagen. Am Mittwoch, 14.04. um 9:05 wurde ausdrücklich von einem Lehrer gefordert, den Artikel runter zu nehmen, da dieser "Falschaussagen verbreitet". Urprünglich erschien der Artikel in dieser Form:*
 
