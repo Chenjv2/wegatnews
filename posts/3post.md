@@ -1,11 +1,11 @@
 ---
 title: Unglaublich modern – die neuen 5er-Gänge
+slug: "unglaublich-modern-die-neuen-5er-gaenge"
 date: "2025-12-09"
 author: "Vincent, 10.Klasse"
-author-full-name: "Vincent Cui 10b"
 image: "/article-images/3.webp"
 image_source: "eigene Aufnahme"
-tags: Informativ
+tags: 
 preview: "Der erste Eindruck- „Wow“. Es war lange eine abgesperrte Baustelle, doch jetzt konnte es erstmals betreten werden"
 ---
 

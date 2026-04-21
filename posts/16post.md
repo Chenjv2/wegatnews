@@ -1,11 +1,11 @@
 ---
 title: "Mensa, ein guter Ort zum Essen?"
+slug: "mensa-ein-guter-ort-zum-essen"
 date: "2026-01-29"
 author: "Meryem, 6.Klasse"
-author-full-name: "Meryem Kangal 6b"
 image: "/article-images/16.webp"
 image_source: "https://unsplash.com/de/fotos/schalen-aus-rostfreiem-stahl-5E0d3lfoC1w"
-tags: Informativ
+tags: 
 preview: "Die Mensa - gutes oder schlechtes Essen. Viele Leute gehen mittags in der Mensa essen. Doch diese weist für die Massen an Schülern viele Fehler auf"
 ---
 

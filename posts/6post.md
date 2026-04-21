@@ -1,11 +1,11 @@
 ---
 title: Schüler frieren in der Pause – Lehrer bleiben im Warmen 
+slug: "schueler-frieren-in-der-pause-lehrer-bleiben-im-warmen"
 date: "2025-12-06"
 author: "Philipp, 10.Klasse"
-author-full-name: "Philipp Borsch 10b"
 image: "/article-images/6.webp"
 image_source: "https://unsplash.com/de/fotos/ein-schneemann-steht-mitten-auf-einem-feld-CqBvboiSgQA"
-tags: Informativ
+tags: 
 preview: "Ihr kennt es bestimmt alle, es ist mal wieder Winterzeit und es ganz schön kalt, manchmal sogar Minusgrade"
 ---
 

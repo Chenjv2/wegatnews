@@ -1,8 +1,8 @@
 ---
 title: "Wenn das Toilettenmonster wieder zuschlägt..."
+slug: "wenn-das-toilettenmonster-wieder-zuschlaegt"
 date: "2025-12-03"
 author: "Ouijdan, 10.Klasse"
-author-full-name: "Ouijdan Hussein 10b"
 image: "/article-images/9.webp"
 image_source: "Unsplash https://unsplash.com/de/fotos/ein-schmutziges-badezimmer-mit-einer-kaputten-toilette-darin-I0rfPQhep7c"
 tags: "Meinung"

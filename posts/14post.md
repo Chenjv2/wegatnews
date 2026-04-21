@@ -1,11 +1,11 @@
 ---
 title: "Rezension: Horror Date"
 date: "2026-01-15"
+slug: "rezension-horror-date"
 author: "Sophie, 9.Klasse"
-author-full-name: "Sophie Soika 9d"
 image: "/article-images/14.webp"
 image_source: "https://unsplash.com/de/fotos/frau-tragt-schwarzen-pullover-und-halt-handchen-mit-mann-in-grauer-anzugjacke-lSMf7GJoDz4"
-tags: Informativ
+tags: 
 preview: "Das Buch “Horror Date” wurde von Sebastian Fitzek im Jahr 2025 geschrieben und handelt von einem Mann, der sich als seinen totkranken besten Freund ausgeben muss, um ihn auf einem Date zu ersetzten.  "
 ---
 

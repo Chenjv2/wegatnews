@@ -1,11 +1,11 @@
 ---
 title: "Happy Franky – Plötzliche Schließung" 
+slug: "happy-franky-ploetzliche-schliessung"
 date: "2026-02-26"
 author: "Karlotta, 6.Klasse"
-author-full-name: "Karlotta Rizmanoski 6b"
 image: "/article-images/20.webp"
 image_source: "https://unsplash.com/de/fotos/ein-rot-weisses-schild-an-einer-betonwand-T-y-hZzNXWA"
-tags: Informativ
+tags: 
 preview: "Am Anfang lief noch alles gut. Das Happy Franky ist ein Erlebniscenter in der Troisdorfer Innenstadt"
 ---
 Das Happy Franky ist ein Erlebniscenter in der Troisdorfer Innenstadt. Dort gibt es viele verschiedene Arten von Spielen auf mehreren Etagen, inklusive des Stuntwerks, die verschiedenen Mietern gehören.

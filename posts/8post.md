@@ -1,11 +1,11 @@
 ---
 title: Wichteln endlich ohne Stress 
+slug: "wichteln-endlich-ohne-stress"
 date: "2025-12-08"
 author: "Valeriia, 10.Klasse"
-author-full-name: "Valeriia Mazur 10b"
 image: "/article-images/8.webp"
 image_source: "https://unsplash.com/de/fotos/weisser-und-roter-blumenbeutel-c2ULvZriVNY"
-tags: Informativ
+tags: 
 preview: "Weihnachtszeit - alles leuchtet mit bunten Lichtern, Tannenbäume werden so langsam beschmückt und es entsteht eine angenehme Atmosphäre mit mehreren Festtagen vor deiner Tür"
 ---
 

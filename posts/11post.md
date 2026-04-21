@@ -1,11 +1,11 @@
 ---
 title: Vielfältig - Voll - Vorbei - Das Jahr 2025
+slug: "vielfaeltig-voll-vorbei-das-jahr-2025"
 date: "2025-12-14"
 author: "Ouijdan, 10.Klasse"
-author-full-name: "Ouijdan Hussein 10b"
 image: "/article-images/11.webp"
 image_source: "https://unsplash.com/de/fotos/nahaufnahme-einer-uhr-an-einer-wand-Jr2vJlYz1sM"
-tags: Informativ
+tags: 
 preview: "Das Jahr 2025 war ein ereignisvolles Jahr, mit politischen und gesellschaftlichen Auffälligkeiten. Hier sind sechs bis sieben Ereignisse, die 2025 besonders ausgeprägt haben:"
 ---
 

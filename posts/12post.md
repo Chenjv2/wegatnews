@@ -1,11 +1,11 @@
 ---
 title: Buchreview ,,Herr der Fliegen"
+slug: "buchreview-herr-der-fliegen"
 date: "2026-01-15"
 author: "Amaya, 9.Klasse"
-author-full-name: "Amaya Ana Fischer 9d"
 image: "/article-images/12.webp"
 image_source: "Eigene Illustration"
-tags: Informativ
+tags: 
 preview: "Das Buch ,,Herr der Fliegen” von William Golding aus dem Jahr 1954 handelt von der menschlichen Natur und der Eskalation innerhalb einer Gruppe, in der keine Regeln durchgesetzt werden können. (Bild ist eine Illustrion der Autorin)"
 ---
 

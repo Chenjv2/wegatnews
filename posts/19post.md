@@ -1,11 +1,11 @@
 ---
-title: "Social ohne Media: Was mache ich mit meinen Freunden? " 
+title: "Social ohne Media: Was mache ich mit meinen Freunden?"
+slug: "social-ohne-media-was-mache-ich-mit-meinen-freunden" 
 date: "2026-02-19"
 author: "Sophie, 9.Klasse"
-author-full-name: "Sophie Soika 9d"
 image: "/article-images/19.webp"
 image_source: "https://unsplash.com/de/fotos/drei-jugendliche-laufen-durch-eine-trockene-wiese-o8gGuhfjB2M"
-tags: Informativ
+tags: 
 preview: "Unsere Eltern sagen ja immer: “Sei doch weniger am Handy, geh doch mit deinen Freunden raus.” Und ja, ich muss ihnen leider Gottes zustimmen"
 ---
 Unsere Eltern sagen ja immer: “Sei doch weniger am Handy, geh doch mit deinen Freunden raus.” Und ja, ich muss ihnen leider Gottes zustimmen. Und damit ihr nicht wie die größten NPC’s rumgammelt sind hier ein paar Ideen, was ihr stattdessen machen könnt. 

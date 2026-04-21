@@ -1,11 +1,11 @@
 ---
 title: "Zeit statt Zeug"
 date: "2026-01-15"
+slug: "zeit-statt-zeug"
 author: "Amaya, 9.Klasse"
-author-full-name: "Amaya Ana Fischer 9d"
 image: "/article-images/13.webp"
 image_source: "https://unsplash.com/de/fotos/stapel-von-produkten-in-verschiedenen-farben-vhQ4BTH6mj4"
-tags: Informativ
+tags: 
 preview: "Jedes Jahr kommt diese eine Frage immer wieder auf: Was soll ich schenken? In einer Welt, in der Konsum im Vordergrund steht, ist es schwer, ein einzigartiges Geschenk zu finden, ohne gleich Unmengen an Geld ausgeben zu müssen."
 ---
 

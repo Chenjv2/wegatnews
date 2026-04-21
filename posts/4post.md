@@ -1,8 +1,8 @@
 ---
 title: Handyverbot-Sinnvoll oder unsinnig?
+slug: "handyverbot-sinnvoll-oder-unsinnig"
 date: "2025-12-04"
 author: "Matilda 6.Klasse"
-author-full-name: "Matilda Fritsche"
 image: "/article-images/4.webp"
 image_source: "https://unsplash.com/de/fotos/ein-schild-mit-einem-verbot-der-telefonzone-an-einer-grunen-wand-VrRT19_ZjUY"
 tags: Umfrage

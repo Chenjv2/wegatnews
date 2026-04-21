@@ -1,11 +1,11 @@
 ---
 title: 5 Fakten über das Jahr 2025
 date: "2025-12-02"
+slug: "5-fakten-ueber-das-jahr-2025"
 author: "Ouijdan, 10.Klasse"
-author-full-name: "Ouijdan Hussein 10b"
 image: "/article-images/2.webp"
 image_source: "https://unsplash.com/de/fotos/nahaufnahme-einer-nummer-mit-blumen-darauf-qN_4d-A2xm8"
-tags: Informativ
+tags: 
 preview: "Das Jahr 2025 neigt sich langsam das Ende zu und ehe wir uns versehen, ist es schon Neujahr. Hier einmal ein Rückblick auf 5 Ereignisse, die dieses Jahr passiert sind. 1. Erhöhung des Mindestlohns auf 12,82 Euro Schüler, welche schon im Arbeitsmarkt eingestiegen sind, konnten sich dieses Jahr besonders freuen"
 ---
 

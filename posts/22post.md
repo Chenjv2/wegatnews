@@ -1,5 +1,6 @@
 --- 
 title: "Organisieren leicht gemacht" 
+slug: "organisieren-leicht-gemacht"
 date: "2026-03-20"
 author: "Nori, 9,Klasse"
 image: "/article-images/22.webp"

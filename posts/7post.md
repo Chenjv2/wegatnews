@@ -1,11 +1,11 @@
 ---
 title: "Social Media: Ist es wirklich so eine Gefahr?" 
 date: "2025-12-07"
+slug: "social-media-ist-es-wirklich-so-eine-gefahr"
 author: "Sophie, 9.Klasse"
-author-full-name: "Sophie Soika 9d"
 image: "/article-images/7.webp"
 image_source: "https://unsplash.com/de/fotos/eine-gruppe-verschiedener-social-media-logos-HBkpnDVc_Ic"
-tags: Informativ
+tags: 
 preview: "Wir kennen es doch wirklich alle. Schule ist zuende, wir kommen zuhause an und uns ist direkt langweilig"
 ---
 
