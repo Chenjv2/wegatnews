@@ -50,7 +50,6 @@ p {
 
 a:hover {
   scale: 1.05;
-  background-color: var(--coloraccent-hover);
 }
 
 section {

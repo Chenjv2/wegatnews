@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-import SiteLayout from "./SiteLayout";
 
 const TOOL_LINKS = [
   { href: "/tools", label: "Tools" },
@@ -12,7 +11,7 @@ export default function ToolsLayout({ title, description, children }) {
   const fullTitle = title ? `${title} | WE G(A)T NEWS` : "WE G(A)T NEWS";
 
   return (
-    <SiteLayout>
+    <>
       <Head>
         <title>{fullTitle}</title>
         {description ? <meta name="description" content={description} /> : null}
@@ -32,6 +31,6 @@ export default function ToolsLayout({ title, description, children }) {
           {children}
         </div>
       </main>
-    </SiteLayout>
+    </>
   );
 }

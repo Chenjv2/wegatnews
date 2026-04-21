@@ -99,16 +99,30 @@ export default function ImageConverterPage() {
   return (
     <div className="tools-card tools-card--converter">
       <p className="tools-copy">
-        Konvertiere Bilder zu <strong>1200 × 800 WebP</strong>.
+        Bild auswählen, Artikelnummer eingeben und herunterladen.{" "}
+        <strong>Bildquelle nicht vergessen für den Editor,</strong> am besten
+        den Tab offen lassen.
       </p>
-
+      <p>
+        Websiten zur Bildsuche:{" "}
+        <a href="https://unsplash.com/de" target="_blank" rel="noopener noreferrer">
+          Unsplash
+        </a>{", "}
+        
+        <a href="https://www.pexels.com/de-de/" target="_blank" rel="noopener noreferrer">
+          Pexels
+        </a>{", "}
+        <a href="https://pixabay.com/" target="_blank" rel="noopener noreferrer">
+          Pixabay
+        </a>{", "}
+      </p>
       <div className="tools-field">
         <label className="tools-label">Dateiname</label>
         <input
           type="text"
           value={fileName}
           onChange={(event) => setFileName(event.target.value)}
-          placeholder="mein-bild"
+          placeholder="Artikelnummer"
           className="tools-input"
         />
       </div>
@@ -145,7 +159,11 @@ export default function ImageConverterPage() {
       {result ? (
         <div className="tools-section">
           <h3>Konvertiert</h3>
-          <img src={result.url} className="tools-image" alt="Konvertiertes Bild" />
+          <img
+            src={result.url}
+            className="tools-image"
+            alt="Konvertiertes Bild"
+          />
           <p>
             Größe: <strong>{result.sizeKB} KB</strong>
           </p>
@@ -156,9 +174,5 @@ export default function ImageConverterPage() {
 }
 
 ImageConverterPage.getLayout = function getLayout(page) {
-  return (
-    <ToolsLayout title="Image Converter">
-      {page}
-    </ToolsLayout>
-  );
+  return <ToolsLayout title="Image Converter">{page}</ToolsLayout>;
 };

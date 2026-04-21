@@ -28,7 +28,6 @@
 
 .tools-title {
   margin-top: 0;
-  margin-bottom: 16px;
 }
 
 .tools-card {
@@ -118,9 +117,9 @@
 
 .editor-header-row {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-end;
   margin-bottom: 20px;
+
 }
 
 .editor-heading {
@@ -133,6 +132,7 @@
   border: 1px solid #ccc;
   cursor: pointer;
   background: #fafafa;
+  margin-left: 800px;
 }
 
 .editor-input,
@@ -160,7 +160,6 @@
 .editor-char-count {
   font-size: 12px;
   text-align: right;
-  margin-bottom: 12px;
 }
 
 .editor-tags-box {

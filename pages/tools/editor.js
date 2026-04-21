@@ -34,7 +34,7 @@ export default function EditorPage() {
   const [imageSource, setImageSource] = useState("");
   const [preview, setPreview] = useState("");
   const [tagInput, setTagInput] = useState("");
-  const [tags, setTags] = useState(["informativ"]);
+  const [tags, setTags] = useState([]);
   const [contentHtml, setContentHtml] = useState("");
   const [markdown, setMarkdown] = useState("");
 
@@ -83,7 +83,7 @@ export default function EditorPage() {
 
   const removeTag = (tagToRemove) => {
     const nextTags = tags.filter((tag) => tag !== tagToRemove);
-    setTags(nextTags.length ? nextTags : ["informativ"]);
+    setTags(nextTags);
   };
 
   const handleTagKeyDown = (event) => {
@@ -92,7 +92,7 @@ export default function EditorPage() {
       addTag();
     }
 
-    if (event.key === "Backspace" && !tagInput && tags.length > 1) {
+    if (event.key === "Backspace" && !tagInput && tags.length > 0) {
       setTags((prev) => prev.slice(0, -1));
     }
   };
@@ -159,17 +159,6 @@ export default function EditorPage() {
 
   return (
     <div className="editor-page">
-      <div className="editor-header-row">
-        <h1 className="editor-heading">Blog Post Editor</h1>
-
-        <button
-          onClick={() => setAdvancedOpen((prev) => !prev)}
-          className="editor-advanced-toggle"
-        >
-          {advancedOpen ? "Advanced schließen" : "Advanced"}
-        </button>
-      </div>
-
       <input
         type="text"
         placeholder="Titel (max 70 Zeichen)"
@@ -182,7 +171,7 @@ export default function EditorPage() {
 
       <input
         type="text"
-        placeholder="Artikelnummer (Dateiname)"
+        placeholder="Artikelnummer (gleich wie Bild)"
         value={articleNumber}
         onChange={(event) => setArticleNumber(event.target.value)}
         className="editor-input"
@@ -205,7 +194,7 @@ export default function EditorPage() {
 
       <input
         type="text"
-        placeholder="Bild Link (image_source)"
+        placeholder="Bild Link (rechtliche Bildquelle)"
         value={imageSource}
         onChange={(event) => setImageSource(event.target.value)}
         className="editor-input"
@@ -213,7 +202,7 @@ export default function EditorPage() {
 
       <textarea
         rows={2}
-        placeholder="Preview (max 120 Zeichen)"
+        placeholder="Textvorschau (max 120 Zeichen)"
         value={preview}
         onChange={(event) => setPreview(event.target.value)}
         className={`editor-textarea ${previewTooLong ? "editor-input-error" : ""}`.trim()}
@@ -236,7 +225,7 @@ export default function EditorPage() {
           onChange={(event) => setTagInput(event.target.value)}
           onKeyDown={handleTagKeyDown}
           onBlur={addTag}
-          placeholder="Tag"
+          placeholder="Tags (normal leer lassen)"
           className="editor-tag-input"
         />
       </div>
@@ -264,13 +253,23 @@ export default function EditorPage() {
         <div className="editor-error-box">Download gesperrt — Felder prüfen</div>
       ) : null}
 
-      <button
-        onClick={downloadMarkdown}
-        disabled={!isValidPost}
-        className={`editor-download-button ${!isValidPost ? "editor-disabled-button" : ""}`.trim()}
-      >
-        Markdown herunterladen
-      </button>
+      <div className="editor-actions-row">
+        <button
+          onClick={downloadMarkdown}
+          disabled={!isValidPost}
+          className={`editor-download-button ${!isValidPost ? "editor-disabled-button" : ""}`.trim()}
+        >
+          Markdown herunterladen
+        </button>
+
+        <button
+          onClick={() => setAdvancedOpen((prev) => !prev)}
+          className="editor-advanced-toggle"
+          type="button"
+        >
+          {advancedOpen ? "Advanced schließen" : "Advanced"}
+        </button>
+      </div>
 
       {advancedOpen ? (
         <>
