@@ -1,9 +1,9 @@
 .post {
   text-align: center;
   display: block;
+  padding: 40px 20px;
   padding-bottom: 20px;
   margin: 0 auto;
-  padding: 40px 20px;
 }
 
 .post-container {
@@ -23,8 +23,8 @@
 
 .post-title {
   font: var(--h1);
-  margin-bottom: 10px;
   line-height: 1.25;
+  margin: 0 0 10px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -32,11 +32,51 @@
   overflow: hidden;
 }
 
+.post-actions {
+  display: flex;
+  justify-content: flex-start;
+  margin: 8px 0 16px;
+}
+
+.post-share-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 999px;
+  background-color: var(--color1);
+  color: var(--coloraccent);
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.post-share-button:hover {
+  transform: translateY(-1px);
+  background-color: var(--coloraccent);
+  color: var(--color1);
+  border-color: var(--coloraccent);
+}
+
+.post-share-button svg {
+  font-size: 18px;
+}
+
+.post-share-button:focus-visible {
+  outline: 2px solid var(--coloraccent);
+  outline-offset: 3px;
+}
+
 .post-content {
   width: 100%;
 }
 
 .post p {
-  margin: auto;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
 }
