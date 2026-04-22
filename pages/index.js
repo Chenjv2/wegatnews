@@ -1,6 +1,7 @@
 import { getAllPosts } from "../lib/posts";
 import PostGrid from "../components/blog/PostGrid";
 import ArchiveList from "../components/blog/ArchiveList";
+import ShareButton from "../components/layout/ShareButton";
 
 export async function getStaticProps() {
   const posts = getAllPosts();
@@ -67,4 +68,3 @@ export default function Blog({ newestPosts, archivePosts }) {
     </>
   );
 }
-

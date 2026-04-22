@@ -141,6 +141,10 @@ section {
   color: #333;
 }
 
+.blog-entry p {
+  margin: 0;
+}
+
 .blog-entry .meta {
   margin-top: 10px;
   font-size: 0.85rem;
@@ -149,7 +153,6 @@ section {
 
 .blog-entry a {
   display: inline-block;
-  margin-top: 15px;
   padding: 8px 16px;
   background-color: #0077ff;
   color: #fff;
@@ -160,6 +163,55 @@ section {
 
 .blog-entry a:hover {
   background-color: #005fcc;
+}
+
+.blog-entry-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.blog-entry-readmore {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-entry-share {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 999px;
+  background-color: var(--color1);
+  color: var(--coloraccent);
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.blog-entry-share:hover {
+  transform: translateY(-1px);
+  background-color: var(--coloraccent);
+  color: var(--color1);
+  border-color: var(--coloraccent);
+}
+
+.blog-entry-share svg {
+  font-size: 18px;
+}
+
+.blog-entry-share:focus-visible,
+.blog-entry-readmore:focus-visible {
+  outline: 2px solid var(--coloraccent);
+  outline-offset: 3px;
 }
 
 .karte {
@@ -177,9 +229,47 @@ section {
   text-align: left;
 }
 
-.container{
+.container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; 
-  text-align: center;  
+  gap: 20px;
+  text-align: center;
+}
+
+@media (min-width: 769px) {
+  .blog-entry {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .blog-entry img {
+    height: 260px;
+    object-fit: cover;
+  }
+
+  .blog-entry h3 {
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: calc(1.3em * 2);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .blog-entry p {
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: calc(1.6em * 3);
+  }
+
+  .blog-entry-actions {
+    margin-top: auto;
+    padding-top: 16px;
+  }
 }

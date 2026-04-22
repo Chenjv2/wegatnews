@@ -1,8 +1,27 @@
 import Link from "next/link";
+import { FiShare2 } from "react-icons/fi";
 import { getAllPostSlugs, getPostBySlug } from "../../lib/posts";
 import PostHead from "../../components/seo/PostHead";
 
 export default function Post({ post }) {
+  async function handleShare() {
+    const articleUrl = window.location.href;
+
+    try {
+      if (navigator.share) {
+        await navigator.share({
+          title: post.title,
+          url: articleUrl,
+        });
+      } else {
+        await navigator.clipboard.writeText(articleUrl);
+        alert("Link kopiert");
+      }
+    } catch (error) {
+      console.error("Teilen fehlgeschlagen:", error);
+    }
+  }
+
   return (
     <>
       <PostHead post={post} />
@@ -17,6 +36,19 @@ export default function Post({ post }) {
 
           <div className="image-or-text">
             <h1 className="post-title">{post.title}</h1>
+
+            <div className="post-actions">
+              <button
+                type="button"
+                onClick={handleShare}
+                className="post-share-button"
+                aria-label={`Artikel ${post.title} teilen`}
+                title="Artikel teilen"
+              >
+                <FiShare2 aria-hidden="true" />
+              </button>
+            </div>
+
             <div
               className="post-content"
               dangerouslySetInnerHTML={{ __html: post.contentHtml }}
@@ -29,7 +61,9 @@ export default function Post({ post }) {
           <small>Bildquelle: {post.image_source}</small>
         </div>
 
-        <Link href="/">Zurück zur Homepage</Link>
+        <Link href="/" className="button1">
+          Zurück zur Homepage
+        </Link>
       </article>
     </>
   );
@@ -53,4 +87,3 @@ export async function getStaticProps({ params }) {
     props: { post },
   };
 }
-
