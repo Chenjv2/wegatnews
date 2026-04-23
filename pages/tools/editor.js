@@ -186,7 +186,7 @@ export default function EditorPage() {
 
       <input
         type="text"
-        placeholder="Author"
+        placeholder="Author (Vorname, Klassenstufe, zb Clara, 10.Klasse)"
         value={author}
         onChange={(event) => setAuthor(event.target.value)}
         className="editor-input"
@@ -202,7 +202,7 @@ export default function EditorPage() {
 
       <textarea
         rows={2}
-        placeholder="Textvorschau (max 120 Zeichen)"
+        placeholder="Textvorschau (ein interessanter Anfang, der Neugier. max 120 Zeichen)"
         value={preview}
         onChange={(event) => setPreview(event.target.value)}
         className={`editor-textarea ${previewTooLong ? "editor-input-error" : ""}`.trim()}
