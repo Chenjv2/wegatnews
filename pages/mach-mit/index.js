@@ -18,13 +18,17 @@ export default function InformativIndex() {
           </div>
           <div className="image-or-text">
             <h2>Rechtschreibfehler Zähler</h2>
-            <h3>81</h3>
+            <h3>83</h3>
             <p>
               Rechtschreibfehler wurden bisher gefunden. Vielen Dank an alle
               fleißigen Leser*innen, die uns auf Fehler aufmerksam machen!
             </p>
             <p>
               <b>Platz 1</b> der Rechtschreibfehlerfinder: ChatGPT 5 mit 15
+              gefundenen Fehlern
+            </p>
+            <p>
+              <b>Platz 2</b> der Rechtschreibfehlerfinder: Amaya mit 2
               gefundenen Fehlern
             </p>
           </div>
