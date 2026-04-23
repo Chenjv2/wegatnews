@@ -6,7 +6,7 @@ date: "2026-04-15"
 author: "Redaktion"
 image: "/article-images/24.webp"
 image_source: "https://unsplash.com/de/fotos/nahaufnahme-einer-altmodischen-schreibmaschine-qPjV8XaXPTQ"
-preview: "Wir haben einen Fehler begonnen, und deshalb einige Maßnahmen ergriffen"
+preview: "Wir haben einen Fehler begangen, und deshalb einige Maßnahmen ergriffen"
 tags: ["informativ"]
 ---
 
@@ -26,7 +26,7 @@ Deshalb haben wir einige Maßnahmen ergriffen. Zuerst hat sich eine Lehrerin fre
 
   
 
-Des weiteren wurden zwei Fehler Zähler eingeführt, für Rechtschreibung und inhaltliche Fehler. Unter [mach mit](/mach-mit) könnt ihr diese sehen. Jeder kann Fehler/Unklarheiten dort jederzeit melden. Aktuell stehen wir bei 81 Rechtschreibung Fehlern und 1 inhaltlichen Fehler.  
+Des Weiteren wurden zwei Fehler Zähler eingeführt, für Rechtschreibung und inhaltliche Fehler. Unter [mach mit](/mach-mit) könnt ihr diese sehen. Jeder kann Fehler/Unklarheiten dort jederzeit melden. Aktuell stehen wir bei 81 Rechtschreibung Fehlern und 1 inhaltlichen Fehler.  
 
   
 
