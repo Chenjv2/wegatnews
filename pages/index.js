@@ -8,8 +8,8 @@ export async function getStaticProps() {
 
   return {
     props: {
-      newestPosts: posts.slice(0, 20),
-      archivePosts: posts.slice(20),
+      newestPosts: posts.slice(0, 24),
+      archivePosts: posts.slice(24),
     },
   };
 }
