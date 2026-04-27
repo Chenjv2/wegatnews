@@ -113,6 +113,7 @@ export default function EditorPage() {
       `slug: ${yamlString(slug)}`,
       `date: ${yamlString(date)}`,
       `author: ${yamlString(author)}`,
+      `image: ${yamlString(`/article-images/${articleNumber.trim()}.webp`)}`, 
       `image_source: ${yamlString(imageSource)}`,
       `preview: ${yamlString(preview)}`,
       `tags: [${tags.map((tag) => yamlString(tag)).join(", ")}]`,
