@@ -12,6 +12,9 @@ export default function ImageConverterPage() {
 
   const accept = useMemo(() => "image/*", []);
 
+  const fileNameValid = /^\d+$/.test(fileName.trim());
+  const canDownload = Boolean(result?.url && fileNameValid);
+
   const sanitizeFileName = (name) => {
     return name
       .trim()
@@ -86,8 +89,7 @@ export default function ImageConverterPage() {
     event.target.value = "";
   };
 
-  const canDownload = Boolean(result?.url && fileName.trim());
-  const downloadName = `${sanitizeFileName(fileName) || "bild-1200x800"}.webp`;
+  const downloadName = `${sanitizeFileName(fileName)}.webp`;
 
   return (
     <div className="tools-card tools-card--converter">
@@ -121,12 +123,20 @@ export default function ImageConverterPage() {
         <label className="tools-label">Dateiname</label>
         <input
           type="text"
+          inputMode="numeric"
+          pattern="[0-9]*"
           value={fileName}
           onChange={(event) => setFileName(event.target.value)}
           placeholder="Artikelnummer"
-          className="tools-input"
+          className={`tools-input ${
+            fileName.trim() && !fileNameValid ? "tools-input-error" : ""
+          }`.trim()}
         />
       </div>
+
+      {fileName.trim() && !fileNameValid ? (
+        <p className="tools-error">Die Artikelnummer darf nur Zahlen enthalten.</p>
+      ) : null}
 
       <div className="tools-actions">
         <label className="tools-upload-button">

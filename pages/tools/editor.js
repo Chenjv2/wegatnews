@@ -46,7 +46,7 @@ export default function EditorPage() {
     .replace(/\s+/g, " ")
     .trim();
 
-  const articleNumberValid = articleNumber.trim().length > 0;
+  const articleNumberValid = /^\d+$/.test(articleNumber.trim());
 
   const isValidPost =
     title.trim() &&
@@ -113,7 +113,7 @@ export default function EditorPage() {
       `slug: ${yamlString(slug)}`,
       `date: ${yamlString(date)}`,
       `author: ${yamlString(author)}`,
-      `image: ${yamlString(`/article-images/${articleNumber.trim()}.webp`)}`, 
+      `image: ${yamlString(`/article-images/${articleNumber.trim()}.webp`)}`,
       `image_source: ${yamlString(imageSource)}`,
       `preview: ${yamlString(preview)}`,
       `tags: [${tags.map((tag) => yamlString(tag)).join(", ")}]`,
@@ -165,18 +165,30 @@ export default function EditorPage() {
         placeholder="Titel (max 70 Zeichen)"
         value={title}
         onChange={(event) => setTitle(event.target.value)}
-        className={`editor-input ${titleTooLong ? "editor-input-error" : ""}`.trim()}
+        className={`editor-input ${
+          titleTooLong ? "editor-input-error" : ""
+        }`.trim()}
       />
 
       <div className="editor-char-count">{title.length}/70</div>
 
       <input
         type="text"
+        inputMode="numeric"
+        pattern="[0-9]*"
         placeholder="Artikelnummer (gleich wie Bild)"
         value={articleNumber}
         onChange={(event) => setArticleNumber(event.target.value)}
-        className="editor-input"
+        className={`editor-input ${
+          articleNumber.trim() && !articleNumberValid ? "editor-input-error" : ""
+        }`.trim()}
       />
+
+      {articleNumber.trim() && !articleNumberValid ? (
+        <div className="editor-error-box">
+          Die Artikelnummer darf nur Zahlen enthalten.
+        </div>
+      ) : null}
 
       <input
         type="date"
@@ -206,7 +218,9 @@ export default function EditorPage() {
         placeholder="Textvorschau (ein interessanter Anfang, der Neugier. max 120 Zeichen)"
         value={preview}
         onChange={(event) => setPreview(event.target.value)}
-        className={`editor-textarea ${previewTooLong ? "editor-input-error" : ""}`.trim()}
+        className={`editor-textarea ${
+          previewTooLong ? "editor-input-error" : ""
+        }`.trim()}
       />
 
       <div className="editor-char-count">{preview.length}/120</div>
@@ -241,7 +255,12 @@ export default function EditorPage() {
         <button onClick={() => formatText("insertUnorderedList")}>Liste</button>
         <button onClick={() => formatText("insertOrderedList")}>Nummeriert</button>
       </div>
-      <p>Prüfe die Formatierung, ob sie dem Original entspricht. Vor allem bei Fett und Kursiv, sowie Listen und Absätze.</p>
+
+      <p>
+        Prüfe die Formatierung, ob sie dem Original entspricht. Vor allem bei
+        Fett und Kursiv, sowie Listen und Absätze.
+      </p>
+
       <div
         ref={editorRef}
         contentEditable
@@ -251,14 +270,19 @@ export default function EditorPage() {
       />
 
       {!isValidPost ? (
-        <div className="editor-error-box">Download gesperrt — Felder prüfen</div>
+        <div className="editor-error-box">
+          Download gesperrt — Titel, Artikelnummer, Vorschau, Autor und Text
+          prüfen. Die Artikelnummer darf nur Zahlen enthalten.
+        </div>
       ) : null}
 
       <div className="editor-actions-row">
         <button
           onClick={downloadMarkdown}
           disabled={!isValidPost}
-          className={`editor-download-button ${!isValidPost ? "editor-disabled-button" : ""}`.trim()}
+          className={`editor-download-button ${
+            !isValidPost ? "editor-disabled-button" : ""
+          }`.trim()}
         >
           Markdown herunterladen
         </button>
