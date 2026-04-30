@@ -241,7 +241,7 @@ export default function EditorPage() {
         <button onClick={() => formatText("insertUnorderedList")}>Liste</button>
         <button onClick={() => formatText("insertOrderedList")}>Nummeriert</button>
       </div>
-
+      <p>Prüfe die Formatierung, ob sie dem Original entspricht. Vor allem bei Fett und Kursiv, sowie Listen und Absätze.</p>
       <div
         ref={editorRef}
         contentEditable

@@ -40,15 +40,6 @@ export default function ImageConverterPage() {
     cleanupOldResult();
     cleanupOldPreview();
 
-    const originalBaseName = file.name.replace(/\.[^/.]+$/, "");
-
-    setFileName((prev) => {
-      if (prev.trim() === "") {
-        return originalBaseName;
-      }
-      return prev;
-    });
-
     const preview = URL.createObjectURL(file);
     setPreviewUrl(preview);
 
@@ -88,12 +79,14 @@ export default function ImageConverterPage() {
         imageBitmap.close();
       }
     } catch {
+      setResult(null);
       setError("Fehler beim Konvertieren.");
     }
 
     event.target.value = "";
   };
 
+  const canDownload = Boolean(result?.url && fileName.trim());
   const downloadName = `${sanitizeFileName(fileName) || "bild-1200x800"}.webp`;
 
   return (
@@ -103,19 +96,27 @@ export default function ImageConverterPage() {
         <strong>Bildquelle nicht vergessen für den Editor,</strong> am besten
         den Tab offen lassen.
       </p>
+
       <p>
         Websiten zur Bildsuche:{" "}
         <a href="https://unsplash.com/de" target="_blank" rel="noopener noreferrer">
           Unsplash
-        </a>{", "}
-        
-        <a href="https://www.pexels.com/de-de/" target="_blank" rel="noopener noreferrer">
+        </a>
+        {", "}
+        <a
+          href="https://www.pexels.com/de-de/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Pexels
-        </a>{", "}
+        </a>
+        {", "}
         <a href="https://pixabay.com/" target="_blank" rel="noopener noreferrer">
           Pixabay
-        </a>{", "}
+        </a>
+        {", "}
       </p>
+
       <div className="tools-field">
         <label className="tools-label">Dateiname</label>
         <input
@@ -139,9 +140,14 @@ export default function ImageConverterPage() {
         </label>
 
         <a
-          href={result?.url || "#"}
-          download={downloadName}
-          className={`tools-download-button ${result ? "" : "is-disabled"}`.trim()}
+          href={canDownload ? result.url : "#"}
+          download={canDownload ? downloadName : undefined}
+          onClick={(event) => {
+            if (!canDownload) event.preventDefault();
+          }}
+          className={`tools-download-button ${
+            canDownload ? "" : "is-disabled"
+          }`.trim()}
         >
           Herunterladen
         </a>
