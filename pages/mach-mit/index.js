@@ -28,7 +28,11 @@ export default function InformativIndex() {
               gefundenen Fehlern
             </p>
             <p>
-              <b>Platz 2</b> der Rechtschreibfehlerfinder: Amaya mit 2
+              <b>Platz 2</b> der Rechtschreibfehlerfinder: Sophie mit 3
+              gefundenen Fehlern
+            </p>
+            <p>
+              <b>Platz 3</b> der Rechtschreibfehlerfinder: Amaya mit 2
               gefundenen Fehlern
             </p>
           </div>
