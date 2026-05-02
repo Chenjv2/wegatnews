@@ -52,7 +52,7 @@ export default function Blog({ newestPosts, archivePosts }) {
             Einfach per Teams oder E-Mail an Vincent Cui (Technik), oder an
             Ouijdan Hussein (Inhalt)
           </p>
-          <p>vincent.cui@altenforst.de, ouijdan.hussein@altenforst.de</p>
+          <p>wegatnews@outlook.de</p>
           <p>
             Wir treffen uns jeden Donnerstag in der Mittagspause vor den
             Computerräumen.

@@ -9,7 +9,7 @@ export default function InformativIndex() {
               Einfach per Teams oder E-Mail an Vincent Cui (Technik), oder an
               Ouijdan Hussein (Inhalt)
             </p>
-            <p>vincent.cui@altenforst.de, ouijdan.hussein@altenforst.de</p>
+            <p>wegatnews@outlook.de</p>
             <p>
               Wir treffen uns jeden Donnerstag in der Mittagspause vor den
               Computerräumen.
@@ -51,7 +51,7 @@ export default function InformativIndex() {
           <div className="image-or-text">
             <h2>Finde auch Fehler!</h2>
             <p>
-              Hilf uns die Schülerzeitung zu verbessern: Einfach Artikellink, Fehlerbeschreibung und Fehlerart an vincent.cui@altenforst.de 
+              Hilf uns die Schülerzeitung zu verbessern: Einfach Artikellink, Fehlerbeschreibung und Fehlerart an wegatnews@outlook.de
             </p>
           </div>
         </div>

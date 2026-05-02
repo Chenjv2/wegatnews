@@ -31,10 +31,7 @@ export default function InformativIndex() {
           unabhängig von der Schule.
         </p>
         <p>
-          <b>Email:</b> vincent.cui@altenforst.de
-        </p>
-        <p>
-          <b>Email:</b> ouijdan.hussein@altenforst.de
+          <b>Email:</b> wegatnews@outlook.de
         </p>
         
         <h2>Anschrift der Schule</h2>
